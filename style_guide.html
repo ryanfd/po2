@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title>P02 - Style Guide</title>
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href="css/main.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <header>
+        <h1 class="heading">R&G's chocolate</h1>
+
+        <nav class="nav-main">        
+            <a href="#interactive_elements" class="button-nav">
+                Interactive Elements
+            </a>
+            <a href="#text_elements" class="button-nav">
+                Text Elements
+            </a>
+            <a href="#combined_elements" class="button-nav">
+                Combined Elements
+            </a>
+            <a href="#citations" class="button-nav">
+                Citations
+            </a>
+        </nav>
+
+    </header>
+
+    <!-- INTERACTIVE ELEMENTS SECTION // -->
+    <section id="interactive_elements">
+      <h2>Interactive Elements</h2>
+
+      <section class="element">
+        <h3>In-text link</h3>
+        <h4>CSS selector:</h4>
+        <p>.link</p>
+
+        <h4>Sample code:</h4>
+        <code>
+            &lt;p&gt;this is normal p&lt;a href="www.google.com" class="link"&gt;click here for an in-text link &lt;/a&gt; this is normal p&lt;/p&gt;
+        </code>
+
+        <h4>Rendered element:</h4>
+
+        <p>start of p <a href="https://www.google.com" class="link">click here for an in-text link</a> end of p </p>
+      </section>
+
+
+      <!-- Default Button styling section -->
+      <section class="element">
+
+        <h3>Navigation Link</h3>
+
+        <h4>CSS selector:</h4>
+        <p>.button-nav-container .button-nav .button-nav-overlay</p>
+
+        <h4>Sample code:</h4>
+        <code>
+        <pre>
+            &lt;a class="button-nav" href="#"&gt;
+                Link To Section
+            &lt;/a&gt;
+        </pre>
+        </code>
+
+        <h4>Rendered element:</h4>
+            <a class="button-nav" href="#">
+                Link To Section
+            </a>
+      </section>
+
+
+      <section class="element">
+        <h3>Submit/Reset Buttons</h3>
+        
+        <h4>CSS selector:</h4>
+        <p>.button-submit .button-reset</p>
+
+        <h4>Sample code:</h4>
+        <code>
+        <pre>
+            &lt;input class="button-reset type="reset" value="Reset"&gt;
+            &lt;input class="button-submit type="submit" value="Submit"&gt;
+        </pre>
+        </code>
+
+        <h4>Rendered element:</h4>
+        <input class="button-reset" type="reset" value="Reset">
+        <input class="button-submit" type="submit" value="Submit">
+      </section>
+
+      <section class="element">
+        <h3>Text Input Field with Label</h3>
+        <h4>CSS selector:</h4>
+        <p>.text-input .input-label</p>
+
+        <h4>Sample code:</h4>
+        <code>
+        <pre>
+            &lt;div class="text-input"&gt;
+                &lt;label class="input-label" for="rendered-element"&gt; text here &lt;/label&gt;
+                &lt;input type="text" name="example-box" id="rendered-element"&gt;
+            &lt;/div&gt;
+        </pre>
+        </code>
+
+        <h4>Rendered element:</h4>
+        <div class="text-input">
+            <label class="input-label" for="rendered-element">text label</label>
+            <input type="text" name="example-box" id="rendered-element">
+        </div>
+      </section>
+
+
+      <section class="element">
+        <h3>Radio Button with Label</h3>
+
+        <h4>CSS selector:</h4>
+        <p>.radio-input .radio-label</p>
+
+        <h4>Sample code:</h4>
+        <code>
+        <pre>
+            &lt;div class="radio-input"&gt;
+                &lt;input type="radio" name="example-radio" id="radio-element"&gt;
+                &lt;label class="radio-label" for="radio-element"&gt; text here &lt;/label&gt;
+            &lt;/div&gt;
+        </pre>
+        </code>
+
+        <h4>Rendered element:</h4>
+        <div class="radio-input">
+            <input type="radio" name="example-radio" id="radio-element">
+            <label class="radio-label" for="radio-element">radio label</label>
+        </div>
+        
+      </section>
+
+      <section class="element">
+        <h3>Image as a Link</h3>
+        <h4>CSS selector:</h4>
+        <p>.image-link-container .image-link .image-overlay</p>
+
+        <h4>Sample code:</h4>
+        <code>
+        <pre>
+            &lt;div class="image-link-container"&gt;
+                &lt;a href="https://www.google.com" class="image-link"&gt;
+                &lt;img src="img/sbnight3.jpg" alt="this is an example image"&gt;
+                &lt;/a&gt;
+            &lt;/div&gt;
+        </pre>
+        </code>
+
+        <h4>Rendered element:</h4>
+        <div class="image-link-container">
+            <a href="https://www.google.com" class="image-link">
+                <img src="img/#" alt="this is an example image">
+            </a>
+        </div>
+        </section>
+    </section>
+    <!-- // INTERACTIVE ELEMENTS SECTION -->
+
+
+
+    <!-- TEXT ELEMENTS SECTION // -->
+    <section id="text_elements">
+      <h2>Text Elements</h2>
+
+      <section class="element">
+        <h3>Headings</h3>
+        <h4>CSS selector:</h4>
+        <p>.heading</p>
+
+        <h4>Sample code:</h4>
+        <code>
+        <pre>
+            &lt;h1 class="heading"&gt; text here &lt;/h1&gt;
+            &lt;h2 class="heading"&gt; text here &lt;/h2&gt;
+            &lt;h3 class="heading"&gt; text here &lt;/h3&gt;
+            &lt;h4 class="heading"&gt; text here &lt;/h4&gt;
+        </pre>
+        </code>
+
+        <h4>Rendered element:</h4>
+
+        <h1 class="heading">header 1</h1>
+        <h2 class="heading">header 2</h2>
+        <h3 class="heading">header 3</h3>
+        <h4 class="heading">header 4</h4>
+      </section>
+
+      <section class="element">
+        <h3>Paragraphs</h3>
+        <h4>CSS selector:</h4>
+        <p>.block-paragraph</p>
+
+        <h4>Sample code:</h4>
+        <code>
+        <pre>
+            &lt;p class="block-paragraph"&gt; 
+                the paragraph goes here 
+            &lt;/p&gt;
+        </pre>
+        </code>
+
+        <h4>Rendered element:</h4>
+        <p class="block-paragraph">
+            put in lorum ipsum here later
+        </p>
+      </section>
+
+      <section class="element">
+        <h3>Numbered Lists</h3>
+        
+        <h4>CSS selector:</h4>
+        <p>.list-ordered .list-ordered-item</p>
+
+        <h4>Sample code:</h4>
+        <code>
+        <pre>
+            &lt;ol class="list-ordered"&gt;
+              &lt;li class="list-item"&gt;
+                    This is a list item
+                &lt;/li&gt;
+                &lt;li class="list-item"&gt;
+                    This is the second list item
+              &lt;/li&gt;
+            &lt;/ol&gt;
+        </pre>
+        </code>
+
+        <h4>Rendered element:</h4>
+        <ol class="list-ordered">
+          <li class="list-item">
+            This is a list item
+          </li>
+          <li class="list-item">
+            This is the second list item
+          </li>
+        </ol>
+      </section>
+
+    </section>
+    <!-- // TEXT ELEMENTS SECTION -->
+
+
+
+    <!-- COMBINED ELEMENTS SECTION // -->
+    <section id="combined_elements">
+      <h2>Combined Elements</h2>
+
+      <section class="element">
+        <h3>Main Navigation</h3>
+        
+        <h4>CSS selector:</h4>
+        <p>.nav-header .nav-main</p>
+
+        <h4>Sample code:</h4>
+        <code>
+        <pre>
+        </pre>
+        </code>
+
+        <h4>Rendered element:</h4>
+        <header class="nav-header">
+            <div>
+                <h1 class="heading"></h1>
+            </div>
+            <nav class="nav-main">
+                <a></a>
+            </nav>
+        </header>
+    </section>
+
+    <section class="element">
+        <h3>Product/Service Listing</h3>
+        
+        <h4>CSS selector:</h4>
+        <p>.listing</p>
+
+        <h4>Sample code:</h4>
+        <code>
+        <pre>
+        </pre>
+        </code>
+
+        <h4>Rendered element:</h4>
+        <article class="listing">
+        </article>
+      </section>
+
+      <section class="element">
+        <h3>Payment Form</h3>
+        
+        <h4>CSS selector:</h4>
+        <p>.form-pay</p>
+
+        <h4>Sample code:</h4>
+        <code>
+        <pre>
+            &lt;form class="form-pay" action="payment.php"&gt;
+                &lt;h3 class="heading"&gt;Checkout&lt;/h3&gt;
+                &lt;div class="text-input"&gt;
+                    &lt;label class="text-label" for="full-name"&gt;full Name&lt;/label&gt;
+                    &lt;input type="text" id="full-name" name="card-name" placeholder="Louis Moran"&gt;
+                &lt;/div&gt;
+                &lt;div class="text-input"&gt;
+                    &lt;label class="text-label" for="card-number"&gt;credit card number&lt;/label&gt;
+                    &lt;input type="text" id="card-number" name="cardnumber" placeholder="1111-1111-1111-1111"&gt;
+                &lt;/div&gt;
+                &lt;div class="text-input"&gt;
+                    &lt;label class="text-label" for="expiration"&gt;expiration date&lt;/label&gt;
+                    &lt;input type="text" id="expiration" name="expire-date" placeholder="05/21"&gt;
+                &lt;/div&gt;
+                &lt;div class="text-input"&gt;
+                    &lt;label class="text-label" for="cvc"&gt;expiration date&lt;/label&gt;
+                    &lt;input type="text" id="cvc" name="cvc-number" placeholder="000"&gt;
+                &lt;/div&gt;
+                &lt;input class="button-submit" type="submit" value="Submit"&gt;
+            &lt;/form&gt;
+        </pre>
+        </code>
+
+        <h4>Rendered element:</h4>
+        <form class="form-pay" action="payment.php">
+            <h3 class="heading">Checkout</h3>
+            <div class="text-input">
+                <label class="text-label" for="full-name">full Name</label>
+                <input type="text" id="full-name" name="card-name" placeholder="Louis Moran">
+            </div>
+            <div class="text-input">
+                <label class="text-label" for="card-number">credit card number</label>
+                <input type="text" id="card-number" name="cardnumber" placeholder="1111-1111-1111-1111">
+            </div>
+            <div class="text-input">
+                <label class="text-label" for="expiration">expiration date</label>
+                <input type="text" id="expiration" name="expire-date" placeholder="05/21">
+            </div>
+            <div class="text-input">
+                <label class="text-label" for="cvc">expiration date</label>
+                <input type="text" id="cvc" name="cvc-number" placeholder="000">
+            </div>
+            <input class="button-submit" type="submit" value="Submit">
+        </form>
+      </section>
+
+      <section class="element">
+        <h3>Checkout Cart</h3>
+        
+        <h4>CSS selector:</h4>
+        <p>.cart .cart-container</p>
+
+        <h4>Sample code:</h4>
+        <code>
+        <pre>
+        </pre>
+        </code>
+
+        <h4>Rendered element:</h4>
+        <h3>Cart</h3>
+        <section class="cart-container">
+            <form class ="cart" action="checkout.php">
+                <article class="listing">
+                </article>
+            </form>
+        </section>
+      </section>
+
+    </section>
+    <!-- // COMBINED ELEMENTS SECTION -->
+    
+
+
+    <h1>2. Given the company, define the basic branding ideas.</h1>
+    <!-- // Write up section-->
+    <section class="element">
+      <h2>R&G's chocolate</h2>
+      <h3>What does the company do and offer?</h3>
+      <p>
+      </p>
+      <h3>Who is the company's potential customers? (as a user)</h3>
+      <p>
+      </p>
+      <h3>Why might this company entice someone to purchase a product or service?</h3>
+      <p>
+      </p>
+      <h3>What is this company aiming for in terms of style?</h3>
+      <p>
+      </p>
+      <h3>Are there any inspirations for the company?</h3>
+      <p>
+      </p>
+    </section>
+    <!-- write up section-->
+
+
+
+
+    <h1>3. From your branding ideas, assemble brand components </h1>
+    <!-- // Write up section-->
+    <section class="element">
+        <h2>Fonts</h2>
+        <h2>Colour palettes</h2>
+        <div class="color-box">
+            <div class="color-palette color-black">
+                <p>rgb(0, 0, 0)</p>
+            </div>
+            <div class="color-palette color-white">
+                <p>rgb(255, 254, 246)</p>
+            </div>
+            <div class="color-palette color-orange">
+                <p>rgba(255, 162, 99, 0.788)</p>
+            </div>
+        </div>
+        <h2>Potential imagery, and, or, art direction</h2>
+    </section>
+    <!-- write up section-->
+
+
+    <section id="citations">
+      <h2>Citations</h2>
+
+      <ul>
+        <li>Sideshow. Designer. 2012. <strong>Rochester [Font]</strong>. Retrieved from <a
+            href="https://https://fonts.google.com/specimen/Rochester">https://https://fonts.google.com/specimen/Rochester</a>
+        </li>
+        <li>Joe Prince. Principle Design. <strong>Maven Pro [Font]</strong>. Retrieved from <a
+            href="https://fonts.google.com/specimen/Maven+Pro">https://fonts.google.com/specimen/Maven+Pro</a>
+        </li>
+      </ul>
+    </section>
+
+
+
+  </body>
+</html>
