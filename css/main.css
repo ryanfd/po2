@@ -14,7 +14,7 @@ section {
     margin: 2rem;
 }
 
-nav a.button-nav {
+a.button-nav {
     text-align: center;
     background-color: rgba(83,56,117,1);
     padding: 1.25rem 0;
@@ -32,10 +32,10 @@ nav a.button-nav {
     transition: ease-in-out 0.3s;
     font-family: "quicksand_book";
     font-size: 0.8rem;
-    letter-spacing: 0.15rem;
+    letter-spacing: 0.1rem;
 }
 
-nav a.button-nav:hover, a.button-nav:focus {
+a.button-nav:hover, a.button-nav:focus {
     background-color: rgba(10, 10, 10, 1);
     color: rgba(255, 189, 27, 1);
     border-top-color: rgba(10, 10, 10,1);
@@ -45,6 +45,96 @@ h1 {
     font-family: "chocolate";
 }
 
+h4 {
+    margin: 1rem 0;
+}
+
+a {
+    color: rgba(255, 189, 27,1);
+    text-decoration: none;
+    transition: ease-in-out 0.1s;
+}
+
+a:hover, a:focus {
+    color: rgba(255, 189, 27,0.7);
+}
+
+input.button-reset {
+    background-color: rgba(83,56,117,1);
+    padding: 0.25rem 3rem;
+    border: solid;
+    border-color: rgba(255, 189, 27,1);
+    border-width: 2px;
+    color: rgba(255, 255, 251, 1);
+    transition: ease-in-out 0.15s;
+    text-transform: uppercase;
+    margin: 0 1rem;
+}
+
+input.button-reset:hover, input.button-reset:focus {
+    background-color: rgba(255, 189, 27,1);
+    border-color: rgba(83,56,117,1);
+}
+
+input.button-submit {
+    background-color: rgba(83,56,117,1);
+    padding: 0.25rem 3rem;
+    border: solid;
+    border-color: rgba(255, 189, 27,1);
+    border-width: 2px;
+    color: rgba(255, 255, 251, 1);
+    transition: ease-in-out 0.15s;
+    text-transform: uppercase;
+    margin: 0 1rem;
+}
+
+input.button-submit:hover, input.button-submit:focus {
+    background-color: rgba(255, 189, 27,1);
+    border-color: rgba(83,56,117,1);
+}
+
+p {
+    margin: 0.5rem 0;
+}
+
+img {
+    max-width: 100%;
+    transition: ease-in-out 0.2s;
+}
+
+a.image-link {
+    max-width: 30%;
+}
+
+a.image-link img {
+    max-width: 100%;
+}
+
+a.image-link img:hover, img:focus {
+    opacity: 0.9;
+    transform: scale3D(1.05, 1.05, 1.05);
+}
+
+label {
+    text-transform: uppercase;
+    color: rgba(83,56,117,1);
+    margin: 0.25rem 0;
+    padding-top: 0.25rem;
+}
+
+.text-input {
+    max-width: 30%;
+    background-color: rgba(255, 189, 27,0.65);
+}
+
+input[type=text] {
+    width: 100%;
+    /* background-color: rgba(255, 189, 27,0.3); */
+    border: solid;
+    border-color: rgba(83,56,117,1);
+    border-width: thin;
+}
+
 .color-palette {
     padding-top: 2rem;
     padding-bottom: 2rem;
@@ -52,6 +142,8 @@ h1 {
 
 .color-palette p {
     text-align: center;
+    display: block;
+    margin: 0 auto;
 }
 
 .color-black {

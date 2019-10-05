@@ -9,7 +9,42 @@ section {
     display: flex;
     flex-wrap: wrap;
     flex-grow: 1;
-    flex-basis: 1;
+    flex-basis: 100%;
+}
+
+h1 {
+    flex-grow: 1;
+    flex-basis: 100%;
+}
+
+h2 {
+    flex-grow: 1;
+    flex-basis: 100%;
+}
+
+h3 {
+    flex-grow: 1;
+    flex-basis: 100%;
+}
+
+h4 {
+    flex-grow: 1;
+    flex-basis: 100%;
+}
+
+h5 {
+    flex-grow: 1;
+    flex-basis: 100%;
+}
+
+h6 {
+    flex-grow: 1;
+    flex-basis: 100%;
+}
+
+p {
+    flex-grow: 1;
+    flex-basis: 100%;
 }
 
 header {
@@ -31,6 +66,18 @@ nav {
     flex-wrap: wrap;
     flex-grow: 1;
     flex-basis: 25%;
+}
+
+div {
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    flex-basis: 100%;
+}
+
+label {
+    flex-grow: 1;
+    flex-basis: 100%;
 }
 
 .color-box {
