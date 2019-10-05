@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100%;
+    margin: 2rem;
+    background-color: rgba(255, 255, 251,1);
+}
+
+section {
+    margin: 2rem;
+}
+
+nav a.button-nav {
+    text-align: center;
+    background-color: rgba(83,56,117,1);
+    padding: 1.25rem 0;
+    color: rgba(255, 255, 251,1);
+    text-decoration: none;
+    text-transform: uppercase;
+    display: block;
+    margin: 0 auto;
+    border-bottom: solid;
+    border-top: solid;
+    border-bottom-width: 2px;
+    border-top-width: 2px;
+    border-bottom-color: rgba(255, 189, 27, 1);
+    border-top-color: rgba(83,56,117,1);
+    transition: ease-in-out 0.3s;
+}
+
+nav a.button-nav:hover, a.button-nav:focus {
+    background-color: rgba(10, 10, 10, 1);
+    color: rgba(255, 189, 27, 1);
+    border-top-color: rgba(10, 10, 10,1);
+}
+
+h1 {
+    font-family: "chocolate";
+}
+
+.color-palette {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.color-palette p {
+    text-align: center;
+}
+
+.color-black {
+    background-color: rgba(10, 10, 10, 1);
+}
+
+.color-black p {
+    color: rgba(255, 255, 251,1);
+}
+
+.color-white {
+    background-color: rgba(255, 255, 251,1);
+}
+
+.color-purple {
+    background-color: rgba(96,64,135, 1);
+}
+
+.color-purple p {
+    color: rgba(255, 250, 244,1);
+}
+
+.color-gold {
+    background-color: rgba(255, 189, 27, 1);
+}
