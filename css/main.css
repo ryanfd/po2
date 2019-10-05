@@ -141,9 +141,9 @@ article.listing a {
     transition: ease-in-out 0.3s;
 }
 
-article.listing a:hover figcaption, a:focus figcaption {
-    background-color: rgba(83,56,117,1);
-    transition: 0.5s;
+article.listing a:hover figure img, a:focus figure img {
+    opacity: 0.85;
+    transition: 0.3s;
 }
 
 article.listing figcaption {
@@ -151,18 +151,33 @@ article.listing figcaption {
     /* text-align: right; */
     padding: 0.25rem 0;
     width: 100%;
-    background-color: rgba(255, 189, 27,1);
     margin: 0;
+    /* margin-top:-0.2rem; */
+    color: rgba(10, 10, 10, 1);
+    font-size: 0.8rem;
+    line-height: 1.1rem;
+    border-bottom: solid;
+    border-bottom-color: rgba(255, 189, 27,1);
+    margin-top: 0.125rem;
 }
 
-article.listing figcaption p {
+article.listing p.price {
     margin: 0;
     padding: 0;
     text-align: right;
     padding-right: 1rem;
-    margin-top: 0.125rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.375rem;
     font-size: 1rem;
+    color: rgba(255, 189, 27,1);
+    background-color: rgba(83,56,117,1);
+    margin-top: -0.25rem;
+}
+
+article.listing a:hover p.price, a:focus p.price {
     color: rgba(10, 10, 10, 1);
+    transition: 0.3s;
+    background-color: rgba(255, 189, 27,1);
 }
 
 p {
