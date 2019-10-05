@@ -7,6 +7,7 @@ body {
     height: 100%;
     margin: 2rem;
     background-color: rgba(255, 255, 251,1);
+    font-family: "quicksand_book", Helvetica, Arial, sans-serif;
 }
 
 section {
@@ -29,6 +30,9 @@ nav a.button-nav {
     border-bottom-color: rgba(255, 189, 27, 1);
     border-top-color: rgba(83,56,117,1);
     transition: ease-in-out 0.3s;
+    font-family: "quicksand_book";
+    font-size: 0.8rem;
+    letter-spacing: 0.15rem;
 }
 
 nav a.button-nav:hover, a.button-nav:focus {
