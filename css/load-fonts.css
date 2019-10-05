@@ -1,0 +1,39 @@
+@font-face {
+    font-family: "chocolate";
+    src: url("../font/chocolate.ttf");
+  }
+
+  @font-face {
+      font-family: "quicksand_light";
+      src: url("../font/Quicksand_Light.otf");
+  }
+
+  @font-face {
+    font-family: "quicksand_light_oblique";
+    src: url("../font/Quicksand_Light_Oblique.otf");
+}
+
+@font-face {
+    font-family: "quicksand_dash";
+    src: url("../font/Quicksand_Dash.otf");
+}
+
+@font-face {
+    font-family: "quicksand_book";
+    src: url("../font/Quicksand_Book.otf");
+}
+
+@font-face {
+    font-family: "quicksand_book_oblique";
+    src: url("../font/Quicksand_Book_Oblique.otf");
+}
+
+@font-face {
+    font-family: "quicksand_bold";
+    src: url("../font/Quicksand_Bold.otf");
+}
+
+@font-face {
+    font-family: "quicksand_bold_oblique";
+    src: url("../font/Quicksand_Bold_Oblique.otf");
+}

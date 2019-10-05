@@ -5,13 +5,15 @@
     <meta charset="utf-8">
     <title>P02 - Style Guide</title>
 
+    <link href="css/load-fonts.css" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link href="css/main.css" rel="stylesheet">
+    <link href="css/grid.css" rel=stylesheet>
   </head>
 
   <body>
     <header>
-        <h1 class="heading">R&G's chocolate</h1>
+        <h1 class="heading">R&G's Chocolate</h1>
 
         <nav class="nav-main">        
             <a href="#interactive_elements" class="button-nav">
@@ -135,7 +137,7 @@
         <h4>Rendered element:</h4>
         <div class="radio-input">
             <input type="radio" name="example-radio" id="radio-element">
-            <label class="radio-label" for="radio-element">radio label</label>
+            <label class="radio-label" for="radio-element">Radio Label</label>
         </div>
         
       </section>
@@ -159,7 +161,7 @@
         <h4>Rendered element:</h4>
         <div class="image-link-container">
             <a href="https://www.google.com" class="image-link">
-                <img src="img/#" alt="this is an example image">
+                <img src="img/drizzle.png" alt="this is an example image">
             </a>
         </div>
         </section>
@@ -211,7 +213,7 @@
 
         <h4>Rendered element:</h4>
         <p class="block-paragraph">
-            put in lorum ipsum here later
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus neque enim, vestibulum eget augue eu, luctus condimentum ipsum. Integer auctor vitae orci vitae rutrum. Quisque non iaculis ex. Quisque a erat viverra, egestas risus id, sollicitudin velit. Proin aliquam blandit enim, at aliquet nisi pharetra et. Vestibulum at mi urna. Aenean metus est, molestie non vulputate at, bibendum et est. Curabitur a faucibus ipsum, eget tristique urna. Vivamus augue massa, cursus nec viverra vel, consectetur sit amet turpis. Nam pulvinar volutpat varius. In dignissim nisi vitae felis pharetra tristique.
         </p>
       </section>
 
@@ -269,12 +271,20 @@
 
         <h4>Rendered element:</h4>
         <header class="nav-header">
-            <div>
-                <h1 class="heading"></h1>
-            </div>
-            <nav class="nav-main">
-                <a></a>
-            </nav>
+            <nav class="nav-main">        
+                    <a href="#interactive_elements" class="button-nav">
+                        Interactive Elements
+                    </a>
+                    <a href="#text_elements" class="button-nav">
+                        Text Elements
+                    </a>
+                    <a href="#combined_elements" class="button-nav">
+                        Combined Elements
+                    </a>
+                    <a href="#citations" class="button-nav">
+                        Citations
+                    </a>
+                </nav>
         </header>
     </section>
 
@@ -291,8 +301,20 @@
         </code>
 
         <h4>Rendered element:</h4>
+        
         <article class="listing">
+            <a href="#">
+                <h4 class="heading">Assorted Chocolates</h4>
+                <figure>
+                    <img src="img/listing.jpeg" alt="One of our delicious products." />
+                    <p class="price">$15.99</p>
+                    <figcaption class="quick-description">
+                        An assortment with a wide arrange of chocolates. Dark, milk and white chocolates to satisfy any sweet tooth.
+                    </figcaption>
+                </figure>
+            </a>
         </article>
+        
       </section>
 
       <section class="element">
@@ -305,7 +327,7 @@
         <code>
         <pre>
             &lt;form class="form-pay" action="payment.php"&gt;
-                &lt;h3 class="heading"&gt;Checkout&lt;/h3&gt;
+                &lt;h3 class="heading"&gt;Payment Information&lt;/h3&gt;
                 &lt;div class="text-input"&gt;
                     &lt;label class="text-label" for="full-name"&gt;full Name&lt;/label&gt;
                     &lt;input type="text" id="full-name" name="card-name" placeholder="Louis Moran"&gt;
@@ -329,10 +351,10 @@
 
         <h4>Rendered element:</h4>
         <form class="form-pay" action="payment.php">
-            <h3 class="heading">Checkout</h3>
-            <div class="text-input">
+            <h3 class="heading">Payment Information</h3>
+            <div class="text-input top">
                 <label class="text-label" for="full-name">full Name</label>
-                <input type="text" id="full-name" name="card-name" placeholder="Louis Moran">
+                <input type="text" id="full-name" name="card-name" placeholder="John Doe">
             </div>
             <div class="text-input">
                 <label class="text-label" for="card-number">credit card number</label>
@@ -342,9 +364,9 @@
                 <label class="text-label" for="expiration">expiration date</label>
                 <input type="text" id="expiration" name="expire-date" placeholder="05/21">
             </div>
-            <div class="text-input">
-                <label class="text-label" for="cvc">expiration date</label>
-                <input type="text" id="cvc" name="cvc-number" placeholder="000">
+            <div class="text-input bottom">
+                <label class="text-label" for="cvv">CVV</label>
+                <input type="text" id="cvv" name="cvv-number" placeholder="000">
             </div>
             <input class="button-submit" type="submit" value="Submit">
         </form>
@@ -409,16 +431,27 @@
         <h2>Colour palettes</h2>
         <div class="color-box">
             <div class="color-palette color-black">
-                <p>rgb(0, 0, 0)</p>
+                <p>rgb(10, 10, 10)</p>
             </div>
             <div class="color-palette color-white">
-                <p>rgb(255, 254, 246)</p>
+                <p>rgb(255, 255, 251)</p>
             </div>
-            <div class="color-palette color-orange">
-                <p>rgba(255, 162, 99, 0.788)</p>
+            <div class="color-palette color-purple">
+                <p>rgb(83,56,117)</p>
             </div>
+            <div class="color-palette color-gold">
+                    <p>rgb(255, 189, 27)</p>
+                </div>
         </div>
-        <h2>Potential imagery, and, or, art direction</h2>
+        <div class="brand-imagery">
+            <h2>Potential imagery, and, or, art direction</h2>
+            <img src="img/spoon.jpg" alt="Branding imagery."/>
+            <img src="img/listing.jpeg" alt="Branding imagery."/>
+            <img src="img/drizzle.png" alt="Branding imagery."/>
+            <img src="img/dark.jpeg" alt="Branding imagery."/>
+            <img src="img/kiss.jpg" alt="Branding imagery."/>
+            <img src="img/powder.jpg" alt="Branding imagery."/>
+        </div>
     </section>
     <!-- write up section-->
 
@@ -432,6 +465,12 @@
         </li>
         <li>Joe Prince. Principle Design. <strong>Maven Pro [Font]</strong>. Retrieved from <a
             href="https://fonts.google.com/specimen/Maven+Pro">https://fonts.google.com/specimen/Maven+Pro</a>
+        </li>
+        <li>
+            Chadwick. Photographer. 2014. <strong>Chocolate Assortment [Image]</strong> Retrieved from <a href="https://etccreative.wordpress.com/tag/chocolate-photography/">https://etccreative.wordpress.com/tag/chocolate-photography/</a>
+        </li>
+        <li>
+            Richie. Photographer. 2014. <strong>Chocolate Cake [Image]</strong> Retrieved from <a href="http://www.camerastupid.com/photograph-chocolate-cake/">http://www.camerastupid.com/photograph-chocolate-cake/</a>
         </li>
       </ul>
     </section>

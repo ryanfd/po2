@@ -1,0 +1,105 @@
+body {
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    flex-basis: 100%;
+}
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    flex-basis: 100%;
+}
+
+h1 {
+    flex-grow: 1;
+    flex-basis: 100%;
+}
+
+h2 {
+    flex-grow: 1;
+    flex-basis: 100%;
+}
+
+h3 {
+    flex-grow: 1;
+    flex-basis: 100%;
+}
+
+h4 {
+    flex-grow: 1;
+    flex-basis: 100%;
+}
+
+h5 {
+    flex-grow: 1;
+    flex-basis: 100%;
+}
+
+h6 {
+    flex-grow: 1;
+    flex-basis: 100%;
+}
+
+p {
+    flex-grow: 1;
+    flex-basis: 100%;
+}
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    flex-basis: 100%;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    flex-basis: 100%;
+}
+
+.button-nav {
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    flex-basis: 25%;
+}
+
+div {
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    flex-basis: 100%;
+}
+
+.text-input {
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    flex-basis: 100%;
+}
+
+.text-input label {
+    flex-grow: 1;
+    flex-basis: 100%;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.color-box {
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    flex-basis: 100%;
+}
+
+.color-palette {
+    flex-grow: 1;
+    flex-basis: 25%;
+}
