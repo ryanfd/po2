@@ -75,9 +75,21 @@ div {
     flex-basis: 100%;
 }
 
+.text-input {
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    flex-basis: 100%;
+}
+
 .text-input label {
     flex-grow: 1;
     flex-basis: 100%;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .color-box {
