@@ -41,8 +41,32 @@ a.button-nav:hover, a.button-nav:focus {
     border-top-color: rgba(10, 10, 10,1);
 }
 
-h1 {
+.heading {
+    font-family: "quicksand_light";
+    text-transform: uppercase;
+    color: rgba(83,56,117,1);
+    border-bottom: solid;
+    border-bottom-color: rgba(255, 189, 27, 1);
+    border-bottom-width: 2px;
+}
+
+h1.heading {
+    font-size: 2rem;
+    margin: 1rem 0;
+}
+h2.heading {
+    margin: 1rem 0;
+}
+h3.heading {
+    margin: 1rem 0;
+}
+
+header h1.heading {
     font-family: "chocolate";
+    font-weight: 100;
+    letter-spacing: 0.3rem;
+    text-transform: none;
+    border: none;
 }
 
 h4 {
@@ -93,8 +117,62 @@ input.button-submit:hover, input.button-submit:focus {
     border-color: rgba(83,56,117,1);
 }
 
+article.listing {
+    width: 20%;
+}
+
+article.listing .heading {
+    width: 100%;
+    margin: 0;
+    margin-bottom: 0.5rem;
+}
+
+article.listing img {
+    width: 100%;
+    margin: 0;
+}
+
+figure {
+    width: 100%;
+}
+
+article.listing a {
+    width: 100%;
+    transition: ease-in-out 0.3s;
+}
+
+article.listing a:hover figcaption, a:focus figcaption {
+    background-color: rgba(83,56,117,1);
+    transition: 0.5s;
+}
+
+article.listing figcaption {
+    width: 100%;
+    /* text-align: right; */
+    padding: 0.25rem 0;
+    width: 100%;
+    background-color: rgba(255, 189, 27,1);
+    margin: 0;
+}
+
+article.listing figcaption p {
+    margin: 0;
+    padding: 0;
+    text-align: right;
+    padding-right: 1rem;
+    margin-top: 0.125rem;
+    font-size: 1rem;
+    color: rgba(10, 10, 10, 1);
+}
+
 p {
     margin: 0.5rem 0;
+    line-height: 1.5rem;
+    font-size: 0.85rem;
+}
+
+li {
+    margin: 1.5rem 0;
 }
 
 img {
@@ -115,21 +193,31 @@ a.image-link img:hover, img:focus {
     transform: scale3D(1.05, 1.05, 1.05);
 }
 
-label {
+.text-input {
+    max-width: 30%;
+}
+
+.radio-input input[type=radio] {
+    margin: 0 0.5rem;
+}
+
+.radio-input label {
+    /* text-transform: uppercase; */
+    color: rgba(83,56,117,1);
+}
+
+.text-input label {
     text-transform: uppercase;
     color: rgba(83,56,117,1);
     margin: 0.25rem 0;
     padding-top: 0.25rem;
-}
-
-.text-input {
-    max-width: 30%;
-    background-color: rgba(255, 189, 27,0.65);
+    border-bottom: solid;
+    border-bottom-color: rgba(255, 189, 27,1);
+    border-bottom-width: 2px;
 }
 
 input[type=text] {
     width: 100%;
-    /* background-color: rgba(255, 189, 27,0.3); */
     border: solid;
     border-color: rgba(83,56,117,1);
     border-width: thin;

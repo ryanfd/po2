@@ -75,7 +75,7 @@ div {
     flex-basis: 100%;
 }
 
-label {
+.text-input label {
     flex-grow: 1;
     flex-basis: 100%;
 }
