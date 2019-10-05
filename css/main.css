@@ -31,7 +31,7 @@ a.button-nav {
     border-top-color: rgba(83,56,117,1);
     transition: ease-in-out 0.3s;
     font-family: "quicksand_book";
-    font-size: 0.8rem;
+    font-size: 0.7rem;
     letter-spacing: 0.1rem;
 }
 
@@ -326,4 +326,8 @@ form.form-pay input.button-submit {
 
 .color-gold {
     background-color: rgba(255, 189, 27, 1);
+}
+
+.brand-imagery img {
+    max-width: 20%;
 }
