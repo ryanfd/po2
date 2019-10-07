@@ -370,3 +370,7 @@ form.form-pay input.button-submit {
 .brand-imagery img {
     max-width: 20%;
 }
+
+.centered {
+    margin: 0 auto;
+}

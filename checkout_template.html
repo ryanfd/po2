@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title>P02 - Style Guide</title>
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href="css/load-fonts.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/grid.css" rel=stylesheet>
+  </head>
+
+  <body>
+    <header>
+        <h1 class="heading">R&G's Chocolate</h1>
+
+        <nav class="nav-main">        
+            <a href="style_guide.html" class="button-nav">
+                Main
+            </a>
+            <a href="listing_template.html" class="button-nav">
+                listings template
+            </a>
+            <a href="checkout_template.html" class="button-nav">
+                checkout template
+            </a>
+            <a href="#citations" class="button-nav">
+                Citations
+            </a>
+        </nav>
+
+    </header>
+
+    
+    <section class="cart">
+        <h3 class="heading">Your Items</h3>
+        <figure class="listing">
+            <h4 class="heading">Assorted Chocolates</h4>
+            <a class="no-decoration" href="#">
+                <img src="img/listing.jpeg" alt="One of our delicious products." />
+                <p class="price">$15.99</p>
+                <figcaption class="quick-description">
+                    An assortment with a wide arrange of chocolates. Dark, milk and white chocolates to satisfy any
+                    sweet tooth.
+                </figcaption>
+            </a>
+        </figure>
+        <figure class="listing">
+            <h4 class="heading">Assorted Chocolates</h4>
+            <a class="no-decoration" href="#">
+                <img src="img/listing.jpeg" alt="One of our delicious products." />
+                <p class="price">$15.99</p>
+                <figcaption class="quick-description">
+                    An assortment with a wide arrange of chocolates. Dark, milk and white chocolates to satisfy any
+                    sweet tooth.
+                </figcaption>
+            </a>
+        </figure>
+        <figure class="listing">
+            <h4 class="heading">Assorted Chocolates</h4>
+            <a class="no-decoration" href="#">
+                <img src="img/listing.jpeg" alt="One of our delicious products." />
+                <p class="price">$15.99</p>
+                <figcaption class="quick-description">
+                    An assortment with a wide arrange of chocolates. Dark, milk and white chocolates to satisfy any
+                    sweet tooth.
+                </figcaption>
+            </a>
+        </figure>
+        <figure class="listing">
+            <h4 class="heading">Assorted Chocolates</h4>
+            <a class="no-decoration" href="#">
+                <img src="img/listing.jpeg" alt="One of our delicious products." />
+                <p class="price">$15.99</p>
+                <figcaption class="quick-description">
+                    An assortment with a wide arrange of chocolates. Dark, milk and white chocolates to satisfy any
+                    sweet tooth.
+                </figcaption>
+            </a>
+        </figure>
+    </section>
+
+
+    
+    <form class="form-pay centered" action="payment.php">
+        <h3 class="heading">Payment Information</h3>
+        <div class="text-input top">
+            <label class="text-label" for="full-name">full Name</label>
+            <input type="text" id="full-name" name="card-name" placeholder="John Doe">
+        </div>
+        <div class="text-input">
+            <label class="text-label" for="card-number">credit card number</label>
+            <input type="text" id="card-number" name="cardnumber" placeholder="1111-1111-1111-1111">
+        </div>
+        <div class="text-input">
+            <label class="text-label" for="expiration">expiration date</label>
+            <input type="text" id="expiration" name="expire-date" placeholder="05/21">
+        </div>
+        <div class="text-input bottom">
+            <label class="text-label" for="cvv">CVV</label>
+            <input type="text" id="cvv" name="cvv-number" placeholder="000">
+        </div>
+        <input class="button-submit" type="submit" value="Submit">
+    </form>
+</body>
+</html>
