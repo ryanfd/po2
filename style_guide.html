@@ -5,8 +5,8 @@
     <meta charset="utf-8">
     <title>P02 - Style Guide</title>
 
-    <link href="css/load-fonts.css" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
+    <link href="css/load-fonts.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
     <link href="css/grid.css" rel=stylesheet>
   </head>
@@ -43,7 +43,9 @@
 
         <h4>Sample code:</h4>
         <code>
-            &lt;p&gt;this is normal p&lt;a href="www.google.com" class="link"&gt;click here for an in-text link &lt;/a&gt; this is normal p&lt;/p&gt;
+            <pre>
+                &lt;p&gt;this is normal p&lt;a href="www.google.com" class="link"&gt;click here for an in-text link &lt;/a&gt; this is normal p&lt;/p&gt;
+            </pre>
         </code>
 
         <h4>Rendered element:</h4>
@@ -51,14 +53,12 @@
         <p>start of p <a href="https://www.google.com" class="link">click here for an in-text link</a> end of p </p>
       </section>
 
-
-      <!-- Default Button styling section -->
       <section class="element">
 
         <h3>Navigation Link</h3>
 
         <h4>CSS selector:</h4>
-        <p>.button-nav-container .button-nav .button-nav-overlay</p>
+        <p>.button-nav</p>
 
         <h4>Sample code:</h4>
         <code>
@@ -150,20 +150,16 @@
         <h4>Sample code:</h4>
         <code>
         <pre>
-            &lt;div class="image-link-container"&gt;
-                &lt;a href="https://www.google.com" class="image-link"&gt;
-                &lt;img src="img/sbnight3.jpg" alt="this is an example image"&gt;
-                &lt;/a&gt;
-            &lt;/div&gt;
+            &lt;a href="https://www.google.com" class="image-link"&gt;
+                &lt;img src="img/drizzle.jpg" alt="this is an example image"&gt;
+            &lt;/a&gt;
         </pre>
         </code>
 
         <h4>Rendered element:</h4>
-        <div class="image-link-container">
-            <a href="https://www.google.com" class="image-link">
-                <img src="img/drizzle.png" alt="this is an example image">
-            </a>
-        </div>
+        <a href="https://www.google.com" class="image-link">
+            <img src="img/drizzle.png" alt="this is an example image">
+        </a>
         </section>
     </section>
     <!-- // INTERACTIVE ELEMENTS SECTION -->
@@ -266,25 +262,41 @@
         <h4>Sample code:</h4>
         <code>
         <pre>
+        &lt;header class="nav-header"&gt;
+            &lt;nav class="nav-main"&gt;
+                &lt;a href="#interactive_elements" class="button-nav"&gt;
+                    Interactive Elements
+                &lt;/a&gt;
+                &lt;a href="#text_elements" class="button-nav"&gt;
+                    Text Elements
+                &lt;/a&gt;
+                &lt;a href="#combined_elements" class="button-nav"&gt;
+                    Combined Elements
+                &lt;/a&gt;
+                &lt;a href="#citations" class="button-nav"&gt;
+                    Citations
+                &lt;/a&gt;
+            &lt;/nav&gt;
+        &lt;/header&gt;
         </pre>
         </code>
 
         <h4>Rendered element:</h4>
         <header class="nav-header">
             <nav class="nav-main">        
-                    <a href="#interactive_elements" class="button-nav">
-                        Interactive Elements
-                    </a>
-                    <a href="#text_elements" class="button-nav">
-                        Text Elements
-                    </a>
-                    <a href="#combined_elements" class="button-nav">
-                        Combined Elements
-                    </a>
-                    <a href="#citations" class="button-nav">
-                        Citations
-                    </a>
-                </nav>
+                <a href="#interactive_elements" class="button-nav">
+                    Interactive Elements
+                </a>
+                <a href="#text_elements" class="button-nav">
+                    Text Elements
+                </a>
+                <a href="#combined_elements" class="button-nav">
+                    Combined Elements
+                </a>
+                <a href="#citations" class="button-nav">
+                    Citations
+                </a>
+            </nav>
         </header>
     </section>
 
@@ -297,23 +309,33 @@
         <h4>Sample code:</h4>
         <code>
         <pre>
+        &lt;figure class="listing"&gt;
+            &lt;h4 class="heading"&gt;Assorted Chocolates&lt;/h4&gt;
+            &lt;a class="no-decoration" href="#"&gt;
+                &lt;img src="img/listing.jpeg" alt="One of our delicious products." /&gt;
+                &lt;p class="price"&gt;$15.99&lt;/p&gt;
+                &lt;figcaption class="quick-description"&gt;
+                    An assortment with a wide arrange of chocolates. Dark, milk and white chocolates to satisfy any sweet tooth.
+                &lt;/figcaption&gt;
+            &lt;/a&gt;
+        &lt;/figure&gt;
         </pre>
         </code>
 
         <h4>Rendered element:</h4>
         
-        <article class="listing">
-            <a href="#">
-                <h4 class="heading">Assorted Chocolates</h4>
-                <figure>
-                    <img src="img/listing.jpeg" alt="One of our delicious products." />
-                    <p class="price">$15.99</p>
-                    <figcaption class="quick-description">
-                        An assortment with a wide arrange of chocolates. Dark, milk and white chocolates to satisfy any sweet tooth.
-                    </figcaption>
-                </figure>
+        <!-- <article class="listing"> -->
+        <figure class="listing">
+            <h4 class="heading">Assorted Chocolates</h4>
+            <a class="no-decoration" href="#">
+                <img src="img/listing.jpeg" alt="One of our delicious products." />
+                <p class="price">$15.99</p>
+                <figcaption class="quick-description">
+                    An assortment with a wide arrange of chocolates. Dark, milk and white chocolates to satisfy any sweet tooth.
+                </figcaption>
             </a>
-        </article>
+        </figure>
+        <!-- </article> -->
         
       </section>
 
@@ -376,21 +398,105 @@
         <h3>Checkout Cart</h3>
         
         <h4>CSS selector:</h4>
-        <p>.cart .cart-container</p>
+        <p>.cart</p>
 
         <h4>Sample code:</h4>
         <code>
         <pre>
+            &lt;section class="cart"&gt;
+                &lt;h3 class="heading"&gt;Your Items&lt;/h3&gt;
+                &lt;figure class="listing"&gt;
+                    &lt;h4 class="heading"&gt;Assorted Chocolates&lt;/h4&gt;
+                    &lt;a class="no-decoration" href="#"&gt;
+                        &lt;img src="img/listing.jpeg" alt="One of our delicious products." /&gt;
+                        &lt;p class="price"&gt;$15.99&lt;/p&gt;
+                        &lt;figcaption class="quick-description"&gt;
+                            An assortment with a wide arrange of chocolates. Dark, milk and white chocolates to satisfy any sweet
+                            tooth.
+                        &lt;/figcaption&gt;
+                    &lt;/a&gt;
+                &lt;/figure&gt;
+                &lt;figure class="listing"&gt;
+                    &lt;h4 class="heading"&gt;Assorted Chocolates&lt;/h4&gt;
+                    &lt;a class="no-decoration" href="#"&gt;
+                        &lt;img src="img/listing.jpeg" alt="One of our delicious products." /&gt;
+                        &lt;p class="price"&gt;$15.99&lt;/p&gt;
+                        &lt;figcaption class="quick-description"&gt;
+                            An assortment with a wide arrange of chocolates. Dark, milk and white chocolates to satisfy any sweet
+                            tooth.
+                        &lt;/figcaption&gt;
+                    &lt;/a&gt;
+                &lt;/figure&gt;
+                &lt;figure class="listing"&gt;
+                    &lt;h4 class="heading"&gt;Assorted Chocolates&lt;/h4&gt;
+                    &lt;a class="no-decoration" href="#"&gt;
+                        &lt;img src="img/listing.jpeg" alt="One of our delicious products." /&gt;
+                        &lt;p class="price"&gt;$15.99&lt;/p&gt;
+                        &lt;figcaption class="quick-description"&gt;
+                            An assortment with a wide arrange of chocolates. Dark, milk and white chocolates to satisfy any sweet
+                            tooth.
+                        &lt;/figcaption&gt;
+                    &lt;/a&gt;
+                &lt;/figure&gt;
+                &lt;figure class="listing"&gt;
+                    &lt;h4 class="heading"&gt;Assorted Chocolates&lt;/h4&gt;
+                    &lt;a class="no-decoration" href="#"&gt;
+                        &lt;img src="img/listing.jpeg" alt="One of our delicious products." /&gt;
+                        &lt;p class="price"&gt;$15.99&lt;/p&gt;
+                        &lt;figcaption class="quick-description"&gt;
+                            An assortment with a wide arrange of chocolates. Dark, milk and white chocolates to satisfy any sweet
+                            tooth.
+                        &lt;/figcaption&gt;
+                    &lt;/a&gt;
+                &lt;/figure&gt;
+            &lt;/section&gt;
         </pre>
         </code>
 
         <h4>Rendered element:</h4>
         <h3>Cart</h3>
-        <section class="cart-container">
-            <form class ="cart" action="checkout.php">
-                <article class="listing">
-                </article>
-            </form>
+        <section class="cart">
+            <h3 class="heading">Your Items</h3>
+            <figure class="listing">
+                <h4 class="heading">Assorted Chocolates</h4>
+                <a class="no-decoration" href="#">
+                    <img src="img/listing.jpeg" alt="One of our delicious products." />
+                    <p class="price">$15.99</p>
+                    <figcaption class="quick-description">
+                        An assortment with a wide arrange of chocolates. Dark, milk and white chocolates to satisfy any sweet tooth.
+                    </figcaption>
+                </a>
+            </figure>
+            <figure class="listing">
+                <h4 class="heading">Assorted Chocolates</h4>
+                <a class="no-decoration" href="#">
+                    <img src="img/listing.jpeg" alt="One of our delicious products." />
+                    <p class="price">$15.99</p>
+                    <figcaption class="quick-description">
+                        An assortment with a wide arrange of chocolates. Dark, milk and white chocolates to satisfy any sweet tooth.
+                    </figcaption>
+                </a>
+            </figure>
+            <figure class="listing">
+                <h4 class="heading">Assorted Chocolates</h4>
+                <a class="no-decoration" href="#">
+                    <img src="img/listing.jpeg" alt="One of our delicious products." />
+                    <p class="price">$15.99</p>
+                    <figcaption class="quick-description">
+                        An assortment with a wide arrange of chocolates. Dark, milk and white chocolates to satisfy any sweet tooth.
+                    </figcaption>
+                </a>
+            </figure>
+            <figure class="listing">
+                <h4 class="heading">Assorted Chocolates</h4>
+                <a class="no-decoration" href="#">
+                    <img src="img/listing.jpeg" alt="One of our delicious products." />
+                    <p class="price">$15.99</p>
+                    <figcaption class="quick-description">
+                        An assortment with a wide arrange of chocolates. Dark, milk and white chocolates to satisfy any sweet tooth.
+                    </figcaption>
+                </a>
+            </figure>
         </section>
       </section>
 
@@ -405,18 +511,23 @@
       <h2>R&G's chocolate</h2>
       <h3>What does the company do and offer?</h3>
       <p>
+          R&G's chocolate provides an exquisite chocolate experience, perfect for a special occasion or gift. They make very rich and royal chocolates to so anyone can feel like royalty. 
       </p>
       <h3>Who is the company's potential customers? (as a user)</h3>
       <p>
+          There is an accountant named Bill James. He's got a wife whom he loves to bits and wants to give her a little treat on a random day back home from work. He's not wealthy by any stretch of imagination, but he knows one shop which provides quality chocolates for a reasonable price. 
       </p>
       <h3>Why might this company entice someone to purchase a product or service?</h3>
       <p>
+          This company creates an opportunity for a great gift or guilty pleasure for a reasonable price. This company can guarantee quality and luxury providing a great experience. 
       </p>
       <h3>What is this company aiming for in terms of style?</h3>
       <p>
+          This company uses royal purple and bright gold to give a sense of elegence and royalty. As if it is a classic brand that has been around serving royalty for years and years to come. 
       </p>
       <h3>Are there any inspirations for the company?</h3>
       <p>
+          We were very inspired by a few chocolate companies; in particular: Purdy's, Rocky MTN Chocolate, and Lindt. All of which have a rich history and air of luxury to them. All color schemes include gold which displays elegence .
       </p>
     </section>
     <!-- write up section-->

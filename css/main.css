@@ -1,3 +1,5 @@
+/* main elements */
+
 * {
     margin: 0;
     padding: 0;
@@ -10,8 +12,53 @@ body {
     font-family: "quicksand_book", Helvetica, Arial, sans-serif;
 }
 
+input[type=text] {
+    width: 100%;
+    border: solid;
+    border-color: rgba(83,56,117,1);
+    border-width: thin;
+    padding: 0.3rem 0.6rem;
+    margin: 0;
+}
+
+form input[type=text] {
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+}
+
 section {
+    width: 100%;
     margin: 2rem;
+}
+
+p {
+    margin: 0.5rem 0;
+    line-height: 1.5rem;
+    font-size: 0.85rem;
+}
+
+li {
+    margin: 1.5rem 0;
+}
+
+img {
+    max-width: 100%;
+    transition: ease-in-out 0.2s;
+}
+
+
+
+/* interactive elements */
+
+.link {
+    color: rgba(255, 189, 27,1);
+    text-decoration: none;
+    transition: ease-in-out 0.1s;
+}
+
+.link:hover, .link:focus {
+    color: rgba(255, 189, 27,0.7);
 }
 
 a.button-nav {
@@ -41,48 +88,6 @@ a.button-nav:hover, a.button-nav:focus {
     border-top-color: rgba(10, 10, 10,1);
 }
 
-.heading {
-    font-family: "quicksand_light";
-    text-transform: uppercase;
-    color: rgba(83,56,117,1);
-    border-bottom: solid;
-    border-bottom-color: rgba(255, 189, 27, 1);
-    border-bottom-width: 2px;
-}
-
-h1.heading {
-    font-size: 2rem;
-    margin: 1rem 0;
-}
-h2.heading {
-    margin: 1rem 0;
-}
-h3.heading {
-    margin: 1rem 0;
-}
-
-header h1.heading {
-    font-family: "chocolate";
-    font-weight: 100;
-    letter-spacing: 0.3rem;
-    text-transform: none;
-    border: none;
-}
-
-h4 {
-    margin: 1rem 0;
-}
-
-a {
-    color: rgba(255, 189, 27,1);
-    text-decoration: none;
-    transition: ease-in-out 0.1s;
-}
-
-a:hover, a:focus {
-    color: rgba(255, 189, 27,0.7);
-}
-
 input.button-reset {
     background-color: rgba(255, 189, 27,1);
     padding: 0.25rem 3rem;
@@ -99,6 +104,7 @@ input.button-reset:hover, input.button-reset:focus {
     background-color: rgba(83,56,117,1);
     border-color: rgba(83,56,117,1);
     color: rgba(255, 255, 251, 1);
+    cursor: pointer;
 }
 
 input.button-submit {
@@ -117,97 +123,7 @@ input.button-submit:hover, input.button-submit:focus {
     background-color: rgba(83,56,117,1);
     border-color: rgba(83,56,117,1);
     color: rgba(255, 255, 251, 1);
-}
-
-article.listing {
-    width: 20%;
-}
-
-article.listing .heading {
-    width: 100%;
-    margin: 0;
-    margin-bottom: 0.5rem;
-}
-
-article.listing img {
-    width: 100%;
-    margin: 0;
-}
-
-figure {
-    width: 100%;
-}
-
-article.listing a {
-    width: 100%;
-    transition: ease-in-out 0.3s;
-}
-
-article.listing a:hover figure img, a:focus figure img {
-    opacity: 0.85;
-    transition: 0.3s;
-}
-
-article.listing figcaption {
-    width: 100%;
-    /* text-align: right; */
-    padding: 0.25rem 0;
-    width: 100%;
-    margin: 0;
-    /* margin-top:-0.2rem; */
-    color: rgba(10, 10, 10, 1);
-    font-size: 0.8rem;
-    line-height: 1.1rem;
-    border-bottom: solid;
-    border-bottom-color: rgba(255, 189, 27,1);
-    margin-top: 0.125rem;
-}
-
-article.listing p.price {
-    margin: 0;
-    padding: 0;
-    text-align: right;
-    padding-right: 1rem;
-    padding-top: 0.5rem;
-    padding-bottom: 0.375rem;
-    font-size: 1rem;
-    color: rgba(255, 189, 27,1);
-    background-color: rgba(83,56,117,1);
-    margin-top: -0.25rem;
-}
-
-article.listing a:hover p.price, a:focus p.price {
-    color: rgba(10, 10, 10, 1);
-    transition: 0.3s;
-    background-color: rgba(255, 189, 27,1);
-}
-
-p {
-    margin: 0.5rem 0;
-    line-height: 1.5rem;
-    font-size: 0.85rem;
-}
-
-li {
-    margin: 1.5rem 0;
-}
-
-img {
-    max-width: 100%;
-    transition: ease-in-out 0.2s;
-}
-
-a.image-link {
-    max-width: 30%;
-}
-
-a.image-link img {
-    max-width: 100%;
-}
-
-a.image-link img:hover, img:focus {
-    opacity: 0.9;
-    transform: scale3D(1.05, 1.05, 1.05);
+    cursor: pointer;
 }
 
 .text-input {
@@ -223,33 +139,144 @@ a.image-link img:hover, img:focus {
     color: rgba(83,56,117,1);
 }
 
-form.form-pay {
-    width: 40%;
-}
-
 .text-input label {
     text-transform: uppercase;
     color: rgba(83,56,117,1);
     margin: 0.25rem 0;
-    padding-top: 0.25rem;
+    padding: 0.25rem 0;
     border-bottom: solid;
     border-bottom-color: rgba(255, 189, 27,1);
     border-bottom-width: 2px;
-    
 }
 
-input[type=text] {
+a.image-link {
+    max-width: 30%;
+}
+
+a.image-link img {
+    max-width: 100%;
+}
+
+a.image-link img:hover, img:focus {
+    opacity: 0.9;
+    transform: scale3D(1.05, 1.05, 1.05);
+}
+
+/* text elements */
+
+.heading {
+    font-family: "quicksand_light";
+    text-transform: uppercase;
+    color: rgba(83,56,117,1);
+    border-bottom: solid;
+    border-bottom-color: rgba(255, 189, 27, 1);
+    border-bottom-width: 2px;
+}
+
+h1.heading {
+    font-size: 2rem;
+    margin: 1rem 0;
+}
+
+h2.heading {
+    margin: 1rem 0;
+}
+
+h3.heading {
+    margin: 1rem 0;
+}
+
+header h1.heading {
+    font-family: "chocolate";
+    font-weight: 100;
+    letter-spacing: 0.3rem;
+    text-transform: none;
+    border: none;
+}
+
+h4 {
+    margin: 1rem 0;
+}
+
+
+
+/* combined elements */
+
+.no-decoration {
+    text-decoration: none;
+}
+
+.listing {
+    margin: 1rem;
+}
+
+figure.listing {
+    text-decoration: none;
+    width: 25%;
+}
+
+figure.listing .heading {
     width: 100%;
-    border: solid;
-    border-color: rgba(83,56,117,1);
-    border-width: thin;
+    margin: 0;
+    margin-bottom: 0.5rem;
+}
+
+figure.listing img {
+    width: 160rem;
     margin: 0;
 }
 
-form input[type=text] {
-    width: 80%;
-    display: block;
-    margin: 0 auto;
+figure {
+    width: 100%;
+    text-decoration: none;
+}
+
+figure.listing a {
+    width: 100%;
+    transition: ease-in-out 0.3s;
+}
+
+figure.listing a:hover figure img, a:focus figure img {
+    opacity: 0.85;
+    transition: 0.3s;
+}
+
+figure.listing figcaption {
+    width: 100%;
+    /* text-align: right; */
+    padding: 0.25rem 0;
+    width: 100%;
+    margin: 0;
+    /* margin-top:-0.2rem; */
+    color: rgba(10, 10, 10, 1);
+    font-size: 0.8rem;
+    line-height: 1.1rem;
+    border-bottom: solid;
+    border-bottom-color: rgba(255, 189, 27,1);
+    margin-top: 0.125rem;
+}
+
+figure.listing p.price {
+    margin: 0;
+    padding: 0;
+    text-align: right;
+    padding-right: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.375rem;
+    font-size: 1rem;
+    color: rgba(255, 189, 27,1);
+    background-color: rgba(83,56,117,1);
+    margin-top: -0.25rem;
+}
+
+figure.listing a:hover p.price, a:focus p.price {
+    color: rgba(10, 10, 10, 1);
+    transition: 0.3s;
+    background-color: rgba(255, 189, 27,1);
+}
+
+form.form-pay {
+    width: 40%;
 }
 
 form h3.heading {
@@ -292,6 +319,18 @@ form.form-pay input.button-submit {
     margin: 0;
     padding: 0.5rem 0;
 }
+
+.cart {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.listing {
+    flex-basis: 1;
+}
+
+
+/* Brand stuff */
 
 .color-palette {
     padding-top: 2rem;
