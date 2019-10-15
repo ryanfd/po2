@@ -23,6 +23,13 @@ input[type=text] {
     margin: 0;
 }
 
+/* reference from: https://stackoverflow.com/questions/16156594/how-to-change-border-color-of-textarea-on-focus */
+input:active, input:focus{
+    outline: none !important;
+    border-color: rgba(83,56,117,1);
+    box-shadow: 0 0 3px rgba(83,56,117,1);
+}
+
 form input[type=text] {
     width: 80%;
     display: block;
