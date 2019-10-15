@@ -1,15 +1,17 @@
 /* main elements */
 
 * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-body {
+body.guide {
     height: 100%;
     margin: 2rem;
     background-color: rgba(255, 255, 251,1);
     font-family: "quicksand_book", Helvetica, Arial, sans-serif;
+    scroll-behavior: smooth;
 }
 
 input[type=text] {
@@ -329,6 +331,14 @@ form.form-pay input.button-submit {
     flex-basis: 1;
 }
 
+.cart .listing {
+    display: block;
+    margin: 0 auto;
+    max-width: 20%;
+    padding: 0 2rem;
+    margin-bottom: 4rem;
+}
+
 
 /* Brand stuff */
 
@@ -356,7 +366,7 @@ form.form-pay input.button-submit {
 }
 
 .color-purple {
-    background-color: rgba(96,64,135, 1);
+    background-color: rgba(83,56,117,1);
 }
 
 .color-purple p {
@@ -373,4 +383,85 @@ form.form-pay input.button-submit {
 
 .centered {
     margin: 0 auto;
+}
+
+body, html {
+    height: 100%;
+    background-color: rgba(255, 255, 251,1);
+    font-family: "quicksand_book", Helvetica, Arial, sans-serif;
+    scroll-behavior: smooth;
+  }
+
+.content nav {
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+}
+  
+.landing-screen {
+    background-attachment: scroll;
+    position: relative;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100%;
+}
+  
+.caption {
+    text-align: center;
+}
+  
+.landing-screen .caption {
+    position: absolute;
+    left: 25%;
+    right: 25%;
+    top: 50%;
+    text-align: center;
+    text-transform: uppercase;
+}
+  
+.caption h1 {
+    display: inline-block;
+    font-family: "chocolate";
+}
+  
+#not-a-link {
+    color: rgba(255, 255, 251, 1);
+    padding-top: 0.5rem;
+    padding-left: 0.5rem;
+    padding-bottom: 0.5rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 0.5rem;
+    text-decoration: none;
+    line-height: 4rem;
+}
+
+  .landing-half {
+    min-width: 50%;
+  }
+
+  .landing-half.purple {
+      background-color: rgba(83,56,117,1);
+  }
+
+  .landing-half.gold {
+    background-color: rgba(255, 189, 27, 1);
+  }
+
+@media (max-width: 48em) {
+    form.form-pay {
+        width: 90%;
+    }
+}
+
+@media (max-width: 31em) {
+    .cart .listing {
+        flex-grow: 1;
+        flex-basis: 100%;
+        max-width: 100%;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
 }

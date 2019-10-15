@@ -1,5 +1,16 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    flex-basis: 100%;
+}
+
+.landing-screen {
+    display:flex;
     flex-wrap: wrap;
     flex-grow: 1;
     flex-basis: 100%;
@@ -65,7 +76,7 @@ nav {
     display: flex;
     flex-wrap: wrap;
     flex-grow: 1;
-    flex-basis: 25%;
+    flex-basis: 15%;
 }
 
 div {
@@ -73,6 +84,18 @@ div {
     flex-wrap: wrap;
     flex-grow: 1;
     flex-basis: 100%;
+}
+
+.cart {
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    flex-basis: 100%;
+}
+
+.cart .listing {
+    flex-grow: 1;
+    flex-basis: 33.333%;
 }
 
 .text-input {
@@ -102,4 +125,48 @@ form {
 .color-palette {
     flex-grow: 1;
     flex-basis: 25%;
+}
+
+.landing-screen {
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    flex-basis: 100%;
+}
+
+.landing-half {
+    flex-grow: 1;
+    flex-basis: 50%;
+}
+
+@media (max-width: 76.25em) {
+    .button-nav {
+        display: flex;
+        flex-wrap: wrap;
+        flex-grow: 1;
+        flex-basis: 25%;
+    }
+}
+
+@media (max-width: 49.625em) {
+    .button-nav {
+        display: flex;
+        flex-wrap: wrap;
+        flex-grow: 1;
+        flex-basis: 100%;
+    }
+}
+
+@media (max-width: 48em) {
+    .cart .listing {
+        flex-grow: 1;
+        flex-basis: 50%;
+        max-width: 30%;
+    }
+}
+
+@media (max-width: 31.625em) {
+    .cart .listing {
+        max-width: 100%;
+    }
 }
