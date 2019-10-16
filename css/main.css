@@ -271,6 +271,19 @@ p.price {
     margin-top: -0.25rem;
 }
 
+p.total {
+    margin: 0;
+    padding: 0;
+    text-align: right;
+    padding-right: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.375rem;
+    font-size: 1rem;
+    color: rgba(10, 10, 10, 1);
+    background-color: rgba(255, 189, 27,1);
+    margin-top: 2rem;
+}
+
 a:hover p.price, a:focus p.price {
     color: rgba(10, 10, 10, 1);
     transition: 0.3s;
@@ -278,13 +291,13 @@ a:hover p.price, a:focus p.price {
 }
 
 form.form-pay {
-    width: 40%;
+    width: 100%;
 }
 
 form h3.heading {
     margin-bottom: 0;
     padding-bottom: 0;
-    padding-left: 2rem;
+    /* padding-left: 2rem; */
 }
 
 form.form-pay .text-input {
@@ -450,11 +463,11 @@ body, html {
     background-color: rgba(255, 189, 27, 1);
 }
 
-.home-listing .row {
+section .row {
     margin-top: 2.5rem;
 }
 
-.home-listing a {
+section a {
     text-decoration: none;
     color: rgba(10, 10, 10, 1);
 }
@@ -466,6 +479,11 @@ body, html {
 
 .merch-cont img {
     width: 100%;
+}
+
+section.cart .row .merch-cont {
+    max-width: 150px;
+    /* margin: 0; */
 }
 
 p.quick-description {
