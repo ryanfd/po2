@@ -139,6 +139,27 @@ form {
     flex-basis: 50%;
 }
 
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    flex-basis: 100%;
+}
+
+.home-listing {
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    flex-basis: 100%;
+}
+
+.merch-cont {
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    flex-basis: 100%;
+}
+
 @media (max-width: 76.25em) {
     .button-nav {
         display: flex;
