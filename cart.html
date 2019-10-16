@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width intial-scale=1">
+    <title>R&G's Chocolates</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href="css/load-fonts.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/grid.css" rel=stylesheet>
+  </head>
+  <body>
+    <div class="content">
+      <nav class="nav-main">  
+        <a href="index.html" class="button-nav">
+            home
+        </a>
+        <a href="products.html" class="button-nav">
+            products
+        </a>
+        <a href="events.html" class="button-nav">
+          events
+        </a>
+        <a href="cart.html" class="button-nav">
+            cart
+        </a>
+        <a href="about.html" class="button-nav">
+            about
+        </a>
+      </nav>
+
+        <section class="cart">
+            <h2 class="heading">Your Cart</h2>
+            <div class="row">
+                <div class="merch-cont">
+                  <a href="#">
+                    <h4 class="heading">Chocolate Assortment</h4>
+                    <img src="img/listing.jpeg" alt="A lot of chocolates.">
+                    <p class="price">$15.99</p>
+                  </a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="merch-cont">
+                    <a href="#">
+                        <h4 class="heading">Chocolate Assortment</h4>
+                        <img src="img/kiss.jpg" alt="A lot of sweet treats."/>
+                        <p class="price">$15.99</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="cart">
+            <h2 class="heading">Payment Form</h2>
+            <form class="form-pay" action="payment.php">
+                    <h3 class="heading">Payment Information</h3>
+                    <div class="text-input top">
+                        <label class="text-label" for="full-name">full Name</label>
+                        <input type="text" id="full-name" name="card-name" placeholder="John Doe">
+                    </div>
+                    <div class="text-input">
+                        <label class="text-label" for="card-number">credit card number</label>
+                        <input type="text" id="card-number" name="cardnumber" placeholder="1111-1111-1111-1111">
+                    </div>
+                    <div class="text-input">
+                        <label class="text-label" for="expiration">expiration date</label>
+                        <input type="text" id="expiration" name="expire-date" placeholder="05/21">
+                    </div>
+                    <div class="text-input bottom">
+                        <label class="text-label" for="cvv">CVV</label>
+                        <input type="text" id="cvv" name="cvv-number" placeholder="000">
+                    </div>
+                    <input class="button-submit" type="submit" value="Submit">
+                </form>
+        </section>
+    </div>
+  </body>
+</html>

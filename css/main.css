@@ -278,13 +278,13 @@ a:hover p.price, a:focus p.price {
 }
 
 form.form-pay {
-    width: 40%;
+    width: 100%;
 }
 
 form h3.heading {
     margin-bottom: 0;
     padding-bottom: 0;
-    padding-left: 2rem;
+    /* padding-left: 2rem; */
 }
 
 form.form-pay .text-input {
@@ -450,11 +450,11 @@ body, html {
     background-color: rgba(255, 189, 27, 1);
 }
 
-.home-listing .row {
+section .row {
     margin-top: 2.5rem;
 }
 
-.home-listing a {
+section a {
     text-decoration: none;
     color: rgba(10, 10, 10, 1);
 }
@@ -466,6 +466,11 @@ body, html {
 
 .merch-cont img {
     width: 100%;
+}
+
+section.cart .row .merch-cont {
+    max-width: 150px;
+    margin: 0;
 }
 
 p.quick-description {
