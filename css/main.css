@@ -6,12 +6,16 @@
     padding: 0;
 }
 
-body.guide {
+body {
     height: 100%;
     margin: 2rem;
     background-color: rgba(255, 255, 251,1);
     font-family: "quicksand_book", Helvetica, Arial, sans-serif;
     scroll-behavior: smooth;
+}
+
+.about {
+    display: block;
 }
 
 input[type=text] {
@@ -70,25 +74,31 @@ img {
     color: rgba(255, 189, 27,0.7);
 }
 
+.nav-main {
+    height: fit-content;
+    top: 0;
+}
+
 a.button-nav {
-    text-align: center;
-    background-color: rgba(83,56,117,1);
-    padding: 1.25rem 0;
-    color: rgba(255, 255, 251,1);
-    text-decoration: none;
-    text-transform: uppercase;
+    font-family: "quicksand_book";
     display: block;
+    padding: 1.25rem 0;
     margin: 0 auto;
+    text-align: center;
     border-bottom: solid;
     border-top: solid;
     border-bottom-width: 2px;
     border-top-width: 2px;
     border-bottom-color: rgba(255, 189, 27, 1);
     border-top-color: rgba(83,56,117,1);
-    transition: ease-in-out 0.3s;
-    font-family: "quicksand_book";
+    background-color: rgba(83,56,117,1);
+    color: rgba(255, 255, 251,1);
+    text-decoration: none;
+    text-transform: uppercase;
     font-size: 0.7rem;
     letter-spacing: 0.1rem;
+    transition: ease-in-out 0.3s;
+    height: fit-content;
 }
 
 a.button-nav:hover, a.button-nav:focus {
@@ -173,6 +183,10 @@ a.image-link img:hover, img:focus {
 
 /* text elements */
 
+header{
+    height: fit-content;
+}
+
 .heading {
     font-family: "quicksand_light";
     text-transform: uppercase;
@@ -184,7 +198,9 @@ a.image-link img:hover, img:focus {
 
 h1.heading {
     font-size: 2rem;
-    margin: 1rem 0;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+    height: fit-content;
 }
 
 h2.heading {
@@ -196,11 +212,15 @@ h3.heading {
 }
 
 header h1.heading {
+    height: fit-content;
+    display: inline-block;
     font-family: "chocolate";
     font-weight: 100;
     letter-spacing: 0.3rem;
     text-transform: none;
     border: none;
+    padding: none;
+    margin: none;
 }
 
 h4 {
@@ -463,6 +483,13 @@ body, html {
   .landing-half.gold {
     background-color: rgba(255, 189, 27, 1);
   }
+
+.description {
+    display: block;
+    max-width: 60vw;
+    margin: 4rem auto;
+    padding: 1rem 0;
+}
 
 @media (max-width: 48em) {
     form.form-pay {
