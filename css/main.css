@@ -384,8 +384,15 @@ form.form-pay input.button-submit {
     background-color: rgba(255, 189, 27, 1);
 }
 
+.brand-imagery {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .brand-imagery img {
-    max-width: 20%;
+    max-height: 20rem;
+    margin: 1rem;
+
 }
 
 .centered {
