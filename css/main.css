@@ -258,7 +258,7 @@ figure.listing figcaption {
     margin-top: 0.125rem;
 }
 
-figure.listing p.price {
+p.price {
     margin: 0;
     padding: 0;
     text-align: right;
@@ -271,7 +271,7 @@ figure.listing p.price {
     margin-top: -0.25rem;
 }
 
-figure.listing a:hover p.price, a:focus p.price {
+a:hover p.price, a:focus p.price {
     color: rgba(10, 10, 10, 1);
     transition: 0.3s;
     background-color: rgba(255, 189, 27,1);
@@ -390,7 +390,7 @@ body, html {
     background-color: rgba(255, 255, 251,1);
     font-family: "quicksand_book", Helvetica, Arial, sans-serif;
     scroll-behavior: smooth;
-  }
+}
 
 .content nav {
     position: sticky;
@@ -438,17 +438,40 @@ body, html {
     line-height: 4rem;
 }
 
-  .landing-half {
+.landing-half {
     min-width: 50%;
-  }
+}
 
-  .landing-half.purple {
+.landing-half.purple {
       background-color: rgba(83,56,117,1);
-  }
+}
 
-  .landing-half.gold {
+.landing-half.gold {
     background-color: rgba(255, 189, 27, 1);
-  }
+}
+
+.home-listing .row {
+    margin-top: 2.5rem;
+}
+
+.home-listing a {
+    text-decoration: none;
+    color: rgba(10, 10, 10, 1);
+}
+
+.merch-cont {
+    max-width: 225px;
+    margin: 0 auto;
+}
+
+.merch-cont img {
+    width: 100%;
+}
+
+p.quick-description {
+    border-bottom: solid;
+    border-bottom-color: rgba(255, 189, 27,1);
+}
 
 @media (max-width: 48em) {
     form.form-pay {
