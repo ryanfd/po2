@@ -506,3 +506,26 @@ body, html {
         padding-right: 0.5rem;
     }
 }
+
+/* uhhhhhhh description page stuff */
+.item-page {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: start;
+    max-width: 65%;
+    padding: 1rem 0;
+    margin: 0 auto;
+}
+
+.item-page img {
+    display: flex;
+    flex-basis: 1;
+    width: 25rem;
+}
+
+.half {
+    flex-basis: 1;
+    max-width: 30rem;
+    padding: 1rem;
+}
+
