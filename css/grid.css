@@ -176,12 +176,16 @@ section.cart {
     }
 }
 
-@media (max-width: 49.625em) {
+@media (max-width: 77.5em) {
     .button-nav {
         display: flex;
         flex-wrap: wrap;
         flex-grow: 1;
         flex-basis: 100%;
+    }
+
+    .content nav {
+        position: relative;
     }
 }
 
