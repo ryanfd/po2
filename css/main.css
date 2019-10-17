@@ -126,6 +126,10 @@ input.button-reset:hover, input.button-reset:focus {
     cursor: pointer;
 }
 
+input.button-submit[value="Add to cart"] {
+    margin: 0;
+}
+
 input.button-submit {
     background-color: rgba(255, 189, 27,1);
     padding: 0.25rem 3rem;
