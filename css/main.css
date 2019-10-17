@@ -576,7 +576,7 @@ p.quick-description {
     display: flex;
     flex-wrap: wrap;
     align-items: start;
-    max-width: 65%;
+    max-width: 75%;
     padding: 1rem 0;
     margin: 0 auto;
 }
@@ -589,12 +589,12 @@ p.quick-description {
 
 .half {
     flex-basis: 1;
-    max-width: 30rem;
+    max-width: 25rem;
     padding: 1rem;
 }
 
 .product-listing {
-    max-width: 60rem;
+    max-width: 50rem;
 }
 
 .filter {
