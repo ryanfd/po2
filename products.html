@@ -10,13 +10,9 @@
     <link href="css/grid.css" rel=stylesheet>
   </head>
   <body>
-    <div class="landing-screen">
-      <div class="landing-half purple"></div>
-      <div class="landing-half gold"></div>
-      <div class="caption">
-        <h1 id="not-a-link">R&G's Chocolates</h1>
-      </div>
-    </div>
+    <header>
+        <h1 class="heading">R&G's Chocolate</h1>
+    </header>
     <div class="content">
       <nav class="nav-main"> 
           <a href="index.html" class="button-nav">
@@ -36,7 +32,7 @@
           </a>
       </nav>
 
-      <section class="home-listing" id="our-products">
+      <section class="product-listing" id="our-products">
         <h2 class="heading">Our Products</h2>
         
         <div class="row">
@@ -99,17 +95,23 @@
         </div>
       </section>
 
-      <section class="home-events">
-        <h2 class="heading">R&G Events</h2>
+      <section class="filter">
+          <h2 class="heading">Filter</h2>
+
+            <div class="radio-input">
+                <input type="radio" name="chocolates" id="chocolate-filter">
+                <label class="radio-label" for="chocolate-filter">chocolates</label>
+            </div>
+            <div class="radio-input">
+                <input type="radio" name="peanut radio" id="peanut-filter">
+                <label class="radio-label" for="peanut-filter">peanut-free</label>
+            </div>
+            <div class="radio-input">
+                <input type="radio" name="candy radio" id="candy-filter">
+                <label class="radio-label" for="candy-filter">candy</label>
+            </div>
       </section>
 
-      <section class="home-cart">
-        <h2 class="heading">Your Cart</h2>
-      </section>
-
-      <section class="home-about">
-        <h2 class="heading">About Us</h2>
-      </section>
     </div>
   </body>
 </html>

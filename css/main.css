@@ -570,3 +570,11 @@ p.quick-description {
     padding: 1rem;
 }
 
+.product-listing {
+    max-width: 60rem;
+}
+
+.filter {
+    max-width: 20rem;
+    height: fit-content;
+}
