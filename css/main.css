@@ -593,6 +593,10 @@ p.quick-description {
     padding: 1rem;
 }
 
+.products-container {
+    
+}
+
 .product-listing {
     max-width: 50rem;
 }
@@ -600,4 +604,6 @@ p.quick-description {
 .filter {
     max-width: 20rem;
     height: fit-content;
+    top: 5rem;
+    position: sticky;
 }
