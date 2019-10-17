@@ -439,6 +439,25 @@ body, html {
     scroll-behavior: smooth;
 }
 
+.event-content {
+    margin: 2rem;
+}
+
+.event {
+    margin: 2rem 0;
+    border-bottom: solid;
+    border-bottom-width: thin;
+    border-bottom-color: rgba(255, 189, 27, 1);
+}
+
+.event ul {
+    margin:0 2rem;
+}
+
+.event-img {
+    margin-top: 1rem;
+}
+
 .content nav {
     position: sticky;
     position: -webkit-sticky;
@@ -483,6 +502,10 @@ body, html {
     letter-spacing: 0.5rem;
     text-decoration: none;
     line-height: 4rem;
+}
+
+body {
+    margin: 0;
 }
 
 .landing-half {
