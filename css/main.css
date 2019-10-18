@@ -513,7 +513,7 @@ body {
 }
 
 .landing-half {
-    min-width: 50%;
+    /* min-width: 50%; */
 }
 
 .landing-half.purple {
@@ -610,4 +610,14 @@ p.quick-description {
     height: fit-content;
     top: 5rem;
     position: sticky;
+}
+
+@media (max-width: 48em) {
+    h1#not-a-link {
+        font-size: 0.75rem;
+        /* display: block; */
+        position: relative;
+        width: 75%;
+        margin: 0 auto;
+    }
 }
