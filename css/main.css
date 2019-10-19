@@ -348,10 +348,29 @@ form.form-pay .text-input {
 p.heirarchy a {
     color: rgba(255, 189, 27,1);
     text-decoration: none;
-    transition: ease-in-out 0.1s;
+    transition: ease-in-out 0.2s;
 }
 
 p.heirarchy a:hover, a:focus {
+    color: rgba(255, 189, 27,0.7);
+}
+
+.home-events .event a h3 {
+    color: rgba(10, 10, 10, 1);
+    transition: ease-in-out 0.2s;
+}
+
+.home-events .event a h3 em {
+    transition: ease-in-out 0.2s;
+    font-style: normal;
+    color: rgba(83,56,117,1);
+}
+
+.home-events .event a:hover h3 em, a:focus h3 em {
+    color: rgba(255, 189, 27,0.7);
+}
+
+.home-events .event a:hover h3, a:focus h3 {
     color: rgba(255, 189, 27,0.7);
 }
 
@@ -466,7 +485,16 @@ body, html {
 }
 
 .event p {
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.home-events .event {
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
+.home-events .event p {
+    margin-bottom: 0;
 }
 
 .event ul {
