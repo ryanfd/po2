@@ -600,6 +600,10 @@ section.cart .row .merch-cont {
     /* margin: 0; */
 }
 
+h3.event-heading {
+    color: rgba(83,56,117,1);
+}
+
 p.quick-description {
     border-bottom: solid;
     border-bottom-color: rgba(255, 189, 27,1);
@@ -612,6 +616,15 @@ p.quick-description {
     max-width: 60vw;
     margin: 4rem auto;
     padding: 1rem 0;
+    margin-bottom: 1rem;
+}
+
+.contact {
+    display: block;
+    max-width: 60vw;
+    margin: 4rem auto;
+    padding: 1rem 0;
+    margin-top: 1rem;
 }
 
 @media (max-width: 48em) {

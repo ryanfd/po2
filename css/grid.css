@@ -181,16 +181,7 @@ section.cart {
     flex-basis: 100%;
 }
 
-@media (max-width: 76.25em) {
-    .button-nav {
-        display: flex;
-        flex-wrap: wrap;
-        flex-grow: 1;
-        flex-basis: 25%;
-    }
-}
-
-@media (max-width: 77.5em) {
+@media (max-width: 37.5em) {
     .button-nav {
         display: flex;
         flex-wrap: wrap;
