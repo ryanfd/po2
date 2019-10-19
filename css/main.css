@@ -42,7 +42,7 @@ form input[type=text] {
 
 section {
     width: 100%;
-    margin: 2rem;
+    padding: 2rem;
 }
 
 p {
@@ -216,6 +216,10 @@ h3.heading {
     margin: 1rem 0;
 }
 
+h4.heading {
+    height: 30px;
+}
+
 header h1.heading {
     height: fit-content;
     display: inline-block;
@@ -234,7 +238,10 @@ h4 {
     height: 20px;
 }
 
-
+.cart h4.heading {
+    font-size: 0.75rem;
+    height: 15px;
+}
 
 /* combined elements */
 
@@ -413,23 +420,9 @@ form.form-pay input.button-submit {
     padding: 0.5rem 0;
 }
 
-.cart {
-    display: flex;
-    flex-wrap: wrap;
-}
-
 .listing {
     flex-basis: 1;
 }
-
-.cart .listing {
-    display: block;
-    margin: 0 auto;
-    max-width: 20%;
-    padding: 0 2rem;
-    margin-bottom: 4rem;
-}
-
 
 /* Brand stuff */
 
@@ -604,7 +597,7 @@ section a {
 }
 
 .merch-cont {
-    max-width: 225px;
+    max-width: 175px;
     margin: 0 auto;
     justify-content: center;
 }
@@ -614,9 +607,17 @@ section a {
     height: 65%;
 }
 
-section.cart .row .merch-cont {
-    max-width: 150px;
-    /* margin: 0; */
+.cart .merch-object {
+    max-width: 70%;
+}
+
+.cart .merch-object img {
+    height: 50%;
+}
+
+.form-cont {
+    position: fixed;
+    padding-right: 2rem;
 }
 
 h3.event-heading {
@@ -683,16 +684,6 @@ p.quick-description {
 @media (max-width: 48em) {
     form.form-pay {
         width: 90%;
-    }
-}
-
-@media (max-width: 31em) {
-    .cart .listing {
-        flex-grow: 1;
-        flex-basis: 100%;
-        max-width: 100%;
-        padding-left: 0.5rem;
-        padding-right: 0.5rem;
     }
 }
 
