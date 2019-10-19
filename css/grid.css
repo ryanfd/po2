@@ -167,16 +167,21 @@ section.cart {
     flex-basis: 100%;
 }
 
-@media (max-width: 76.25em) {
-    .button-nav {
-        display: flex;
-        flex-wrap: wrap;
-        flex-grow: 1;
-        flex-basis: 25%;
-    }
+.merch-object {
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    flex-basis: 33.333%;
 }
 
-@media (max-width: 77.5em) {
+.item-page {
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    flex-basis: 100%;
+}
+
+@media (max-width: 37.5em) {
     .button-nav {
         display: flex;
         flex-wrap: wrap;
@@ -200,5 +205,16 @@ section.cart {
 @media (max-width: 31.625em) {
     .cart .listing {
         max-width: 100%;
+    }
+}
+
+@media (max-width: 50.25em) {
+    .merch-object {
+        flex-basis: 100%;
+        margin: 3rem 0;
+    }
+
+    .merch-cont img {
+        height: 65%;
     }
 }
