@@ -181,6 +181,20 @@ section.cart {
     flex-basis: 100%;
 }
 
+section.description {
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    flex-basis: 40%;
+}
+
+section.contact {
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    flex-basis: 60%;
+}
+
 @media (max-width: 37.5em) {
     .button-nav {
         display: flex;
@@ -216,5 +230,15 @@ section.cart {
 
     .merch-cont img {
         height: 65%;
+    }
+}
+
+@media (max-width: 65em) {
+    section.description {
+        flex-basis: 100%;
+    }
+
+    section.contact {
+        flex-basis: 100%;
     }
 }
