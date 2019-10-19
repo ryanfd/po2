@@ -379,6 +379,27 @@ li a:hover, a:focus {
     color: rgba(255, 189, 27,0.7);
 }
 
+.home-cart .merch-object img {
+    height: 150px;
+}
+
+.home-product-link {
+    margin-top: 2rem;
+}
+
+.home-cart-cont {
+    margin-top: 2rem;
+}
+
+.home-cart-cont h3.cart-heading {
+    margin-top: 2rem;
+}
+
+.home-cart-cont a:hover h3.cart-heading, .home-cart.cont a:focus h3.cart-heading {
+    color: rgba(255, 189, 27,0.7);
+    transition: ease-in-out 0.1s;
+}
+
 .home-events .event a h3 {
     color: rgba(10, 10, 10, 1);
     transition: ease-in-out 0.2s;
@@ -596,6 +617,11 @@ section a {
     /* width: 90%; */
 }
 
+.merch-cont h4.heading {
+    font-size: 0.8rem;
+    height: 15px;
+}
+
 .merch-cont {
     max-width: 175px;
     margin: 0 auto;
@@ -604,7 +630,7 @@ section a {
 
 .merch-cont img {
     width: 100%;
-    height: 65%;
+    height: 250px;
 }
 
 .cart .merch-object {
@@ -612,7 +638,7 @@ section a {
 }
 
 .cart .merch-object img {
-    height: 50%;
+    height: 250px;
 }
 
 .form-cont {

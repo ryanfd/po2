@@ -198,6 +198,34 @@ section.contact {
     flex-basis: 60%;
 }
 
+.home-product-link {
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    flex-basis: 100%;
+}
+
+.home-product-link a {
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    flex-basis: 100%;
+}
+
+.home-cont-cart {
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    flex-basis: 100%;
+}
+
+.home-cart-cont a {
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    flex-basis: 100%;
+}
+
 @media (max-width: 37.5em) {
     .button-nav {
         display: flex;
@@ -211,14 +239,10 @@ section.contact {
     }
 }
 
-@media (max-width: 50.25em) {
+@media (max-width: 40.25em) {
     .merch-object {
         flex-basis: 100%;
-        margin: 3rem 0;
-    }
-
-    .merch-cont img {
-        height: 65%;
+        margin: 1rem 0;
     }
 }
 
