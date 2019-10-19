@@ -155,6 +155,7 @@ input.button-submit:hover, input.button-submit:focus {
 
 .radio-input input[type=radio] {
     margin: 0 0.5rem;
+    margin-left: 0;
 }
 
 .radio-input label {

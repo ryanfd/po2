@@ -247,19 +247,6 @@ section.contact {
     flex-basis: 100%;
 }
 
-@media (max-width: 37.5em) {
-    .button-nav {
-        display: flex;
-        flex-wrap: wrap;
-        flex-grow: 1;
-        flex-basis: 100%;
-    }
-
-    .content nav {
-        position: relative;
-    }
-}
-
 @media (max-width: 40.25em) {
     .merch-object {
         flex-basis: 100%;
@@ -288,4 +275,44 @@ section.contact {
     .product-listing .merch-object {
         flex-basis: 100%;
     }
+
+    .product-listing {
+        flex-basis: 60%;
+    }
+
+    .filter {
+        flex-basis: 40%;
+    }
+}
+
+@media (max-width: 37.5em) {
+    .button-nav {
+        display: flex;
+        flex-wrap: wrap;
+        flex-grow: 1;
+        flex-basis: 100%;
+    }
+
+    .content nav {
+        position: relative;
+    }
+
+    .product-listing {
+        flex-basis: 100%;
+        margin-top: 10rem;
+    }
+
+    .filter {
+        flex-basis: 100%;
+        padding: 0;
+    }
+
+    .filter-cont {
+        top: 49.25%;
+        width: 100%;
+        background-color: rgba(255, 255, 251,1);
+        padding: 2rem;
+    }
+
+
 }
