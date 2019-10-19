@@ -184,6 +184,27 @@ section.cart-form {
     flex-basis: 100%;
 }
 
+.products-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    flex-basis: 100%;
+}
+
+.product-listing {
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    flex-basis: 70%;
+}
+
+.filter {
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    flex-basis: 30%;
+}
+
 section.description {
     display: flex;
     flex-wrap: wrap;
@@ -260,5 +281,11 @@ section.contact {
     .cart .merch-object {
         flex-basis: 100%;
         margin: 2rem auto;
+    }
+}
+
+@media (max-width: 57.5em) {
+    .product-listing .merch-object {
+        flex-basis: 100%;
     }
 }

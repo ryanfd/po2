@@ -750,15 +750,19 @@ p.quick-description {
     padding: 1rem;
 }
 
-.product-listing {
-    max-width: 50rem;
+.product-listing .merch-object {
+    margin: 2rem 0;
 }
 
 .filter {
     max-width: 20rem;
     height: fit-content;
-    top: 5rem;
-    position: sticky;
+    position: relative;
+}
+
+.filter-cont {
+    position: fixed;
+    margin-right: 2rem;
 }
 
 @media (max-width: 48em) {
