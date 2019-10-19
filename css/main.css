@@ -723,12 +723,6 @@ p.quick-description {
     }
 }
 
-@media (max-width: 48em) {
-    form.form-pay {
-        width: 90%;
-    }
-}
-
 /* uhhhhhhh description page stuff */
 .item-page {
     display: flex;
