@@ -86,18 +86,6 @@ div {
     flex-basis: 100%;
 }
 
-.cart {
-    display: flex;
-    flex-wrap: wrap;
-    flex-grow: 1;
-    flex-basis: 100%;
-}
-
-.cart .listing {
-    flex-grow: 1;
-    flex-basis: 33.333%;
-}
-
 .text-input {
     display: flex;
     flex-wrap: wrap;
@@ -113,6 +101,7 @@ div {
 form {
     display: flex;
     flex-wrap: wrap;
+
 }
 
 .color-box {
@@ -164,10 +153,24 @@ section.cart {
     display: flex;
     flex-wrap: wrap;
     flex-grow: 1;
-    flex-basis: 100%;
+    flex-basis: 60%;
+}
+
+section.cart-form {
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    flex-basis: 40%;
 }
 
 .merch-object {
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    flex-basis: 33.333%;
+}
+
+.cart .merch-object {
     display: flex;
     flex-wrap: wrap;
     flex-grow: 1;
@@ -179,6 +182,27 @@ section.cart {
     flex-wrap: wrap;
     flex-grow: 1;
     flex-basis: 100%;
+}
+
+.products-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    flex-basis: 100%;
+}
+
+.product-listing {
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    flex-basis: 70%;
+}
+
+.filter {
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    flex-basis: 30%;
 }
 
 section.description {
@@ -195,6 +219,72 @@ section.contact {
     flex-basis: 60%;
 }
 
+.home-product-link {
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    flex-basis: 100%;
+}
+
+.home-product-link a {
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    flex-basis: 100%;
+}
+
+.home-cont-cart {
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    flex-basis: 100%;
+}
+
+.home-cart-cont a {
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    flex-basis: 100%;
+}
+
+@media (max-width: 40.25em) {
+    .merch-object {
+        flex-basis: 100%;
+        margin: 1rem 0;
+    }
+}
+
+@media (max-width: 65em) {
+    section.description {
+        flex-basis: 100%;
+    }
+
+    section.contact {
+        flex-basis: 100%;
+    }
+}
+
+@media(max-width: 67.25em) {
+    .cart .merch-object {
+        flex-basis: 100%;
+        margin: 2rem auto;
+    }
+}
+
+@media (max-width: 57.5em) {
+    .product-listing .merch-object {
+        flex-basis: 100%;
+    }
+
+    .product-listing {
+        flex-basis: 60%;
+    }
+
+    .filter {
+        flex-basis: 40%;
+    }
+}
+
 @media (max-width: 37.5em) {
     .button-nav {
         display: flex;
@@ -206,39 +296,36 @@ section.contact {
     .content nav {
         position: relative;
     }
-}
 
-@media (max-width: 48em) {
-    .cart .listing {
-        flex-grow: 1;
-        flex-basis: 50%;
-        max-width: 30%;
-    }
-}
-
-@media (max-width: 31.625em) {
-    .cart .listing {
-        max-width: 100%;
-    }
-}
-
-@media (max-width: 50.25em) {
-    .merch-object {
+    .product-listing {
         flex-basis: 100%;
-        margin: 3rem 0;
+        margin-top: 10rem;
     }
 
-    .merch-cont img {
-        height: 65%;
+    .filter {
+        flex-basis: 100%;
+        padding: 0;
+    }
+
+    .filter-cont {
+        top: 49.25%;
+        width: 100%;
+        background-color: rgba(255, 255, 251,1);
+        padding: 2rem;
     }
 }
 
-@media (max-width: 65em) {
-    section.description {
+@media (max-width: 52em) {
+    section.cart {
         flex-basis: 100%;
     }
 
-    section.contact {
+    section.cart-form {
         flex-basis: 100%;
+    }
+
+    .form-cont {
+        position: relative;
+        padding-right: 0;
     }
 }
