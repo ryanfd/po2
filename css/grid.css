@@ -339,7 +339,7 @@ section.contact {
         width: 100%;
         background-color: rgba(255, 255, 251,1);
         padding: 2rem;
-        padding-top: 8rem;
+        /* padding-top: 8rem; */
     }
 }
 
