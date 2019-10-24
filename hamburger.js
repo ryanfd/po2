@@ -22,6 +22,7 @@ navToggle.addEventListener("click", function () {
         navItems.classList.add("hidden");
         navItems.setAttribute("aria-hidden", "true");
         navToggle.setAttribute("aria-expanded", "false");
+        document.getElementById("nav-toggle").style.position = "relative";
     }
 });
 
@@ -33,7 +34,7 @@ window.addEventListener("resize", checkMenu);
 // }
 
 function checkMenu() {
-    if (window.innerWidth < 500) {
+    if (window.innerWidth < 600) {
         navToggle.classList.remove("hidden");
         navToggle.setAttribute("aria-hidden", "false");
         navItems.classList.add("hidden");

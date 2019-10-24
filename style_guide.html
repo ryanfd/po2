@@ -17,24 +17,22 @@
     <header>
         <h1 class="heading">R&G's Chocolate</h1>
 
-        <nav class="nav-main">        
-            <a href="#interactive_elements" class="button-nav">
-                Interactive Elements
+        <div id="nav-toggle" class="hidden" aria-hidden="true" aria-controls="nav-items"><p>menu</p></div>   
+        <nav class="nav-main" id="nav-items"> 
+            <a href="index.html" class="button-nav">
+                home
             </a>
-            <a href="#text_elements" class="button-nav">
-                Text Elements
+            <a href="products.html" class="button-nav">
+                products
             </a>
-            <a href="#combined_elements" class="button-nav">
-                Combined Elements
+            <a href="events.html" class="button-nav">
+                events
             </a>
-            <a href="listing_template.html" class="button-nav">
-                listings template
+            <a href="cart.html" class="button-nav">
+                cart
             </a>
-            <a href="checkout_template.html" class="button-nav">
-                checkout template
-            </a>
-            <a href="#citations" class="button-nav">
-                Citations
+            <a href="about.html" class="button-nav">
+                about
             </a>
         </nav>
 
@@ -601,3 +599,5 @@
 
   </body>
 </html>
+
+<script src="hamburger.js"></script>

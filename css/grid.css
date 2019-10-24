@@ -283,6 +283,16 @@ section.contact {
     .filter {
         flex-basis: 40%;
     }
+
+    .prod-space1 {
+        padding-bottom: 9rem;
+    }
+
+    .prod-space2 {
+        margin: 0;
+        margin: 8rem 0;
+        margin-top: 10rem;
+    }
 }
 
 @media (max-width: 37.5em) {
@@ -293,7 +303,22 @@ section.contact {
         flex-basis: 100%;
     }
 
-    .content nav {
+    .space1 {
+        margin-bottom: 2rem;
+    }
+
+    .space2 {
+        margin: 8rem 0;
+        margin-top: 10rem;
+    }
+
+    #nav-toggle {
+        /* position: fixed; */
+        width: 100%;
+        z-index:99999;
+    }
+
+    #nav-items.hidden {
         position: relative;
     }
 
@@ -308,10 +333,12 @@ section.contact {
     }
 
     .filter-cont {
-        top: 49.25%;
+        /* position: absolute; */
+        top: 0;
         width: 100%;
         background-color: rgba(255, 255, 251,1);
         padding: 2rem;
+        padding-top: 8rem;
     }
 }
 
