@@ -8,6 +8,8 @@
     <link href="css/load-fonts.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
     <link href="css/grid.css" rel=stylesheet>
+
+
   </head>
   <body>
     <div class="landing-screen">
@@ -25,7 +27,8 @@
     </div>
 
     <div class="content" id="info">
-      <nav class="nav-main"> 
+    <div id="nav-toggle" class="hidden" aria-hidden="true" aria-controls="nav-items"><p>menu</p></div>   
+      <nav class="nav-main" id="nav-items"> 
           <a href="index.html" class="button-nav">
               home
           </a>
@@ -62,7 +65,7 @@
                 <h4 class="heading">Chocolate Treats</h4>
                 <img src="img/kiss.jpg" alt="A lot of sweet treats."/>
                 <p class="price">$12.99</p>
-                <p class="quick-description">An assortment with a wide arrange of chocolates. Dark, milk and white chocolates to satisfy any sweet tooth.</p>
+                <p class="quick-description">Who doesn't want a treat? These sweet little treats will make you salivate</p>
               </div>
             </div>
       
@@ -126,3 +129,5 @@
     </div>
   </body>
 </html>
+
+    <script src="hamburger.js"></script>
