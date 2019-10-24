@@ -6,6 +6,10 @@
     padding: 0;
 }
 
+body.guide {
+    margin-top: 3rem;
+}
+
 body {
     height: 100%;
     margin: 2rem;
