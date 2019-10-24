@@ -316,6 +316,7 @@ section.contact {
         /* position: fixed; */
         width: 100%;
         z-index:99999;
+        /* ??? ryan what the */
     }
 
     #nav-items.hidden {
@@ -324,7 +325,7 @@ section.contact {
 
     .product-listing {
         flex-basis: 100%;
-        margin-top: 10rem;
+        /* margin-top: 10rem; */
     }
 
     .filter {
