@@ -284,14 +284,8 @@ section.contact {
         flex-basis: 40%;
     }
 
-    .prod-space1 {
-        padding-bottom: 9rem;
-    }
-
-    .prod-space2 {
-        margin: 0;
-        margin: 8rem 0;
-        margin-top: 10rem;
+    .product-listing .merch-cont {
+        max-width: 225px;
     }
 }
 
@@ -303,20 +297,10 @@ section.contact {
         flex-basis: 100%;
     }
 
-    .space1 {
-        margin-bottom: 2rem;
-    }
-
-    .space2 {
-        margin: 8rem 0;
-        margin-top: 10rem;
-    }
-
     #nav-toggle {
         /* position: fixed; */
         width: 100%;
         z-index:99999;
-        /* ??? ryan what the */
     }
 
     #nav-items.hidden {

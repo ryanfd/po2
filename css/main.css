@@ -57,6 +57,7 @@ p {
 
 li {
     margin: 1.5rem 0;
+    line-height: 1.5rem;
 }
 
 img {
@@ -69,13 +70,13 @@ img {
 /* interactive elements */
 
 .link {
-    color: rgba(255, 189, 27,1);
+    color: rgba(83,56,117,1);
     text-decoration: none;
     transition: ease-in-out 0.1s;
 }
 
 .link:hover, .link:focus {
-    color: rgba(255, 189, 27,0.7);
+    color: rgba(83,56,117,0.7);
 }
 
 .nav-main {
@@ -365,23 +366,23 @@ form.form-pay .text-input {
 }
 
 p.heirarchy a {
-    color: rgba(255, 189, 27,1);
+    color: rgba(83,56,117,1);
     text-decoration: none;
     transition: ease-in-out 0.2s;
 }
 
 p.heirarchy a:hover, a:focus {
-    color: rgba(255, 189, 27,0.7);
+    color: rgba(83,56,117,0.7);
 }
 
 li a {
-    color: rgba(255, 189, 27,1);
+    color: rgba(83,56,117,1);
     text-decoration: none;
     transition: ease-in-out 0.2s;
 }
 
 li a:hover, a:focus {
-    color: rgba(255, 189, 27,0.7);
+    color: rgba(83,56,117,0.7);
 }
 
 .home-cart .merch-object img {
