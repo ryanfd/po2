@@ -671,8 +671,8 @@ h3.event-heading {
 }
 
 p.quick-description {
-    border-bottom: solid;
-    border-bottom-color: rgba(255, 189, 27,1);
+    /* border-bottom: solid; */
+    /* border-bottom-color: rgba(255, 189, 27,1); */
     padding-bottom: 0.25rem;
     border-bottom-width: 2px;
     color: rgba(10, 10, 10, 1);
